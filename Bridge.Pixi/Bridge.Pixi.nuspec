@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Bridge.Pixi</id>
-    <version>$version$</version>
+    <version>1.2.0</version>
     <authors>Andrey Andreev</authors>
     <description>Pixi.js installation into Bridge.NET projects.</description>
     <dependencies>
