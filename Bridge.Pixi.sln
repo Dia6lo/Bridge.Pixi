@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.Pixi", "Bridge.Pixi\Bridge.Pixi.csproj", "{F2B1BBFB-1A59-4CCF-BEC0-E7036E2A4EC4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge.Pixi", "Bridge.Pixi\Bridge.Pixi.csproj", "{56985A5A-9466-46DA-A95A-90A4138E2DAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F2B1BBFB-1A59-4CCF-BEC0-E7036E2A4EC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F2B1BBFB-1A59-4CCF-BEC0-E7036E2A4EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F2B1BBFB-1A59-4CCF-BEC0-E7036E2A4EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F2B1BBFB-1A59-4CCF-BEC0-E7036E2A4EC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56985A5A-9466-46DA-A95A-90A4138E2DAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56985A5A-9466-46DA-A95A-90A4138E2DAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56985A5A-9466-46DA-A95A-90A4138E2DAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56985A5A-9466-46DA-A95A-90A4138E2DAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
