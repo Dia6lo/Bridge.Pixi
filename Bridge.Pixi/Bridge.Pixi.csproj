@@ -24,6 +24,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <NoWarn>0626, 0824</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -34,8 +35,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="App.cs" />
+    <Compile Include="Renderers\CanvasMaskManager.cs" />
+    <Compile Include="Renderers\CanvasRenderer.cs" />
+    <Compile Include="Pixi.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renderers\RendererOptions.cs" />
+    <Compile Include="Renderers\Resolution.cs" />
+    <Compile Include="Renderers\RendererType.cs" />
+    <Compile Include="Renderers\SystemRenderer.cs" />
+    <Compile Include="Renderers\WebGLRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Bridge, Version=1.11.0.0, Culture=neutral, processorArchitecture=MSIL">
