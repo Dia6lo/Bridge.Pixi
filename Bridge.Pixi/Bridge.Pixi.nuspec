@@ -5,5 +5,8 @@
     <version>$version$</version>
     <authors>Andrey Andreev</authors>
     <description>Pixi.js installation into Bridge.NET projects.</description>
+    <dependencies>
+      <dependency id="Bridge" version="1.11.2" />
+    </dependencies>
   </metadata>
 </package>
