@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Bridge.Pixi</id>
+    <version>$version$</version>
+    <authors>Andrey Andreev</authors>
+    <description>Pixi.js installation into Bridge.NET projects.</description>
+  </metadata>
+</package>
