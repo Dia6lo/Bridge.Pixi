@@ -35,6 +35,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AbstractFilter.cs" />
+    <Compile Include="BaseTexture.cs" />
+    <Compile Include="Container.cs" />
+    <Compile Include="DisplayObject.cs" />
+    <Compile Include="Matrix.cs" />
+    <Compile Include="Point.cs" />
+    <Compile Include="Rectangle.cs" />
     <Compile Include="Renderers\CanvasMaskManager.cs" />
     <Compile Include="Renderers\CanvasRenderer.cs" />
     <Compile Include="Pixi.cs" />
@@ -44,6 +51,12 @@
     <Compile Include="Renderers\RendererType.cs" />
     <Compile Include="Renderers\SystemRenderer.cs" />
     <Compile Include="Renderers\WebGLRenderer.cs" />
+    <Compile Include="RenderTarget.cs" />
+    <Compile Include="ScaleMode.cs" />
+    <Compile Include="ShapeType.cs" />
+    <Compile Include="Sprite.cs" />
+    <Compile Include="StencilMaskStack.cs" />
+    <Compile Include="Texture.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Bridge, Version=1.11.0.0, Culture=neutral, processorArchitecture=MSIL">

@@ -6,6 +6,13 @@
 	public static class Pixi
 	{
 		/// <summary>
+		/// The Default scale mode that affects the default scaling mode of future operations.
+		/// It can be re-assigned to either Linear or Nearest, depending upon suitability.
+		/// </summary>
+		[Name("SCALE_MODES.DEFAULT")]
+		public static ScaleMode DefaultScaleMode;
+
+		/// <summary>
 		/// This helper function will automatically detect which renderer you should be using.
 		/// WebGL is the preferred renderer as it is a lot faster.
 		/// If webGL is not supported by the browser then this function will return a canvas renderer.
