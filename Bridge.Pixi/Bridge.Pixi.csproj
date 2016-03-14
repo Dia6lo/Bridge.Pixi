@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="BlendMode.cs" />
+    <Compile Include="Graphics.cs" />
     <Compile Include="Renderers\WebGL\AbstractFilter.cs" />
     <Compile Include="Textures\BaseTexture.cs" />
     <Compile Include="Container.cs" />

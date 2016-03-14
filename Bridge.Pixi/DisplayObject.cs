@@ -45,11 +45,14 @@
 		/// <returns></returns>
 		public virtual extern Rectangle LocalBounds { get; }
 
-		// TODO.
 		/// <summary>
-		/// INTERFACE IS NOT IMPLEMENTED YET.
+		/// Sets a mask for the DisplayObject. A mask is an object that limits the visibility of
+		/// an object to the shape of the mask applied to it.
+		/// In Pixi a regular mask must be a Graphics or a Sprite object.
+		/// This allows for much faster masking in canvas as it utilises shape clipping.
+		/// To remove a mask, set this property to null.
 		/// </summary>
-		public object Mask;
+		public Any<Graphics, Sprite> Mask;
 
 		/// <summary>
 		/// The display object container that contains this display object.
