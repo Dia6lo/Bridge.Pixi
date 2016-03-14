@@ -13,6 +13,18 @@
 		public static ScaleMode DefaultScaleMode;
 
 		/// <summary>
+		/// The shared ticker instance used by MovieClip and by InteractionManager.
+		/// The property AutoStart is set to true for this instance.
+		/// </summary>
+		[Name("ticker.shared")]
+		public static Ticker SharedTicker;
+
+		/// <summary>
+		/// Target frames per millisecond.
+		/// </summary>
+		public static float TargetFPMS = 0.06f;
+
+		/// <summary>
 		/// This helper function will automatically detect which renderer you should be using.
 		/// WebGL is the preferred renderer as it is a lot faster.
 		/// If webGL is not supported by the browser then this function will return a canvas renderer.
