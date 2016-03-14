@@ -14,15 +14,7 @@ namespace Bridge.Pixi
 		/// </summary>
 		/// <param name="canvas">The canvas element source of the texture.</param>
 		/// <param name="scaleMode">The scale mode of the texture.</param>
-		public static extern BaseTexture FromCanvas(CanvasElement canvas, ScaleMode scaleMode);
-
-		/// <summary>
-		/// Helper function that creates a base texture from the given image url.
-		/// If the image is not in the base texture cache it will be created and loaded.
-		/// </summary>
-		/// <param name="imageUrl">The image url of the texture.</param>
-		/// <param name="crossorigin">Should use anonymous CORS? Defaults to true if the URL is not a data-URI.</param>
-		public static extern BaseTexture FromImage(string imageUrl, bool crossorigin = true);
+		public static extern BaseTexture FromCanvas(CanvasElement canvas, ScaleMode scaleMode = ScaleMode.Default);
 
 		/// <summary>
 		/// Helper function that creates a base texture from the given image url.
@@ -31,7 +23,8 @@ namespace Bridge.Pixi
 		/// <param name="imageUrl">The image url of the texture.</param>
 		/// <param name="crossorigin">Should use anonymous CORS? Defaults to true if the URL is not a data-URI.</param>
 		/// <param name="scaleMode">The scale mode of the texture.</param>
-		public static extern BaseTexture FromImage(string imageUrl, bool crossorigin, ScaleMode scaleMode);
+		public static extern BaseTexture FromImage(string imageUrl, bool crossorigin = true,
+			ScaleMode scaleMode = ScaleMode.Default);
 
 		/// <param name="source">The source object of the texture.</param>
 		/// <param name="scaleMode">The scale mode of the texture.</param>
