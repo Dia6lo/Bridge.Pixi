@@ -48,9 +48,6 @@
 		public extern void DestroyTexture(object texture);
 
 		// TODO
-		public extern void Render(object @object);
-
-		// TODO
 		public extern void RenderDisplayObject(object displayObject, object renderTarget);
 
 		// TODO

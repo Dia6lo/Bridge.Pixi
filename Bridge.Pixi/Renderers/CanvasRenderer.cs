@@ -38,9 +38,6 @@ namespace Bridge.Pixi
 		/// The canvas property used to set the canvas smoothing property.
 		/// </summary>
 		public string SmoothProperty;
-
-		// TODO
-		public extern void Render(object @object);
 	}
 
 	[External]
