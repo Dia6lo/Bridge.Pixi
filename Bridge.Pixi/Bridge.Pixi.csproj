@@ -57,6 +57,7 @@
     <Compile Include="Sprite.cs" />
     <Compile Include="StencilMaskStack.cs" />
     <Compile Include="Texture.cs" />
+    <Compile Include="Ticker.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Bridge, Version=1.11.0.0, Culture=neutral, processorArchitecture=MSIL">

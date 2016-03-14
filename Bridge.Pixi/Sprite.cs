@@ -13,18 +13,10 @@
 		/// </summary>
 		/// <param name="frameId">The frame Id of the texture in the cache.</param>
 		/// <param name="crossorigin">if you want to specify the cross-origin parameter.</param>
-		/// <returns>A new Sprite using a texture from the texture cache matching the frameId.</returns>
-		public static extern Sprite FromFrame(string frameId, bool crossorigin = true);
-
-		/// <summary>
-		/// Helper function that creates a sprite that will contain a texture from the TextureCache
-		/// based on the frameId The frame ids are created when a Texture packer file has been loaded.
-		/// </summary>
-		/// <param name="frameId">The frame Id of the texture in the cache.</param>
-		/// <param name="crossorigin">if you want to specify the cross-origin parameter.</param>
 		/// <param name="scaleMode">The scale mode of the texture.</param>
 		/// <returns>A new Sprite using a texture from the texture cache matching the frameId.</returns>
-		public static extern Sprite FromFrame(string frameId, bool crossorigin, ScaleMode scaleMode);
+		public static extern Sprite FromFrame(string frameId, bool crossorigin = true,
+			ScaleMode scaleMode = ScaleMode.Default);
 
 		/// <summary>
 		/// Helper function that creates a sprite that will contain a texture based on an image

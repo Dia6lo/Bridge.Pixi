@@ -74,6 +74,12 @@ namespace Bridge.Pixi
 		public extern void Destroy(bool removeView = false);
 
 		/// <summary>
+		/// Renders the object to this view.
+		/// </summary>
+		/// <param name="object">The object to be rendered.</param>
+		public extern void Render(DisplayObject @object);
+
+		/// <summary>
 		/// Resizes the canvas view to the specified width and height.
 		/// </summary>
 		/// <param name="width">The new width of the canvas view.</param>

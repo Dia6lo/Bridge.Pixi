@@ -9,6 +9,12 @@
 	public enum ScaleMode
 	{
 		/// <summary>
+		/// Default mode. Can be set at Pixi.DefaultScaleMode.
+		/// </summary>
+		[Name("DEFAULT")]
+		Default,
+
+		/// <summary>
 		/// Smooth scaling.
 		/// </summary>
 		[Name("LINEAR")]

@@ -31,7 +31,7 @@ namespace Bridge.Pixi
 		/// </summary>
 		/// <param name="canvas">The canvas element source of the texture.</param>
 		/// <param name="scaleMode">The scale mode of the texture.</param>
-		public static extern Texture FromCanvas(CanvasElement canvas, ScaleMode scaleMode);
+		public static extern Texture FromCanvas(CanvasElement canvas, ScaleMode scaleMode = ScaleMode.Default);
 
 		/// <summary>
 		/// Helper function that creates a sprite that will contain a texture from the TextureCache
@@ -47,18 +47,19 @@ namespace Bridge.Pixi
 		/// <param name="imageUrl">The image url of the texture.</param>
 		/// <param name="crossorigin">Whether requests should be treated as crossorigin.</param>
 		/// <param name="scaleMode">The scale mode of the texture.</param>
-		public static extern Texture FromImage(string imageUrl, bool crossorigin, ScaleMode scaleMode);
+		public static extern Texture FromImage(string imageUrl, bool crossorigin = true,
+			ScaleMode scaleMode = ScaleMode.Default);
 
 		/// <summary>
 		/// Helper function that creates a new Texture based on the given video element.
 		/// </summary>
-		public static extern Texture FromVideo(VideoElement video, ScaleMode scaleMode);
+		public static extern Texture FromVideo(VideoElement video, ScaleMode scaleMode = ScaleMode.Default);
 
 		/// <summary>
 		/// Helper function that creates a new Texture based on the video url.
 		/// </summary>
 		[Name("fromVideoUrl")]
-		public static extern Texture FromVideoURL(string videoUrl, ScaleMode scaleMode);
+		public static extern Texture FromVideoURL(string videoUrl, ScaleMode scaleMode = ScaleMode.Default);
 
 		// TODO
 		/// <summary>
