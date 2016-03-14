@@ -37,11 +37,10 @@
 		/// </summary>
 		public Point Anchor;
 
-		// TODO
 		/// <summary>
-		/// INTERFACE IS NOT IMPLEMENTED YET.
+		/// The blend mode to be applied to the sprite. Apply a value of Normal to reset the blend mode.
 		/// </summary>
-		public int BlendMode;
+		public BlendMode BlendMode;
 
 		/// <summary>
 		/// Returns the bounds of the Sprite as a rectangle.
