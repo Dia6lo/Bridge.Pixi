@@ -17,12 +17,14 @@
 		/// <summary>
 		/// The array of children of this container.
 		/// </summary>
-		public readonly DisplayObject[] Children;
+		[FieldProperty]
+		public DisplayObject[] Children { get; }
 
 		/// <summary>
 		/// The height of the Container, setting this will actually modify the scale to achieve the value set.
 		/// </summary>
-		public float Height;
+		[FieldProperty]
+		public float Height { get; }
 
 		/// <summary>
 		/// Retrieves the non-global local bounds of the Container as a rectangle.
@@ -33,7 +35,8 @@
 		/// <summary>
 		/// The width of the Container, setting this will actually modify the scale to achieve the value set.
 		/// </summary>
-		public float Width;
+		[FieldProperty]
+		public float Width { get; }
 
 		/// <summary>
 		/// Adds a child to the container.

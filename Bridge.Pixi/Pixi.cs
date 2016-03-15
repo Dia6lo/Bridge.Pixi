@@ -9,20 +9,24 @@
 		/// The Default scale mode that affects the default scaling mode of future operations.
 		/// It can be re-assigned to either Linear or Nearest, depending upon suitability.
 		/// </summary>
+		[FieldProperty]
 		[Name("SCALE_MODES.DEFAULT")]
-		public static ScaleMode DefaultScaleMode;
+		public static ScaleMode DefaultScaleMode { get; set; }
 
 		/// <summary>
 		/// The shared ticker instance used by MovieClip and by InteractionManager.
 		/// The property AutoStart is set to true for this instance.
 		/// </summary>
+		[FieldProperty]
 		[Name("ticker.shared")]
-		public static Ticker SharedTicker;
+		public static Ticker SharedTicker { get; set; }
 
 		/// <summary>
 		/// Target frames per millisecond.
 		/// </summary>
-		public static float TargetFPMS = 0.06f;
+		[FieldProperty]
+		[Name("TARGET_FPMS")]
+		public static float TargetFPMS { get; set; }
 
 		/// <summary>
 		/// This helper function will automatically detect which renderer you should be using.

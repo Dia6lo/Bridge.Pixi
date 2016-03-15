@@ -14,26 +14,34 @@
 		/// <summary>
 		/// A default (identity) matrix.
 		/// </summary>
+		[FieldProperty]
 		[Name("IDENTITY")]
-		public static Matrix Identity;
+		public static Matrix Identity { get; }
 
 		/// <summary>
 		/// A temp matrix.
 		/// </summary>
+		[FieldProperty]
 		[Name("TEMP_MATRIX")]
-		public static Matrix TempMatrix;
+		public static Matrix TempMatrix { get; }
 
-		public float A = 1;
+		[FieldProperty]
+		public float A { get; set; }
 
-		public float B = 0;
+		[FieldProperty]
+		public float B { get; set; }
 
-		public float C = 0;
+		[FieldProperty]
+		public float C { get; set; }
 
-		public float D = 1;
+		[FieldProperty]
+		public float D { get; set; }
 
-		public float TX = 0;
+		[FieldProperty]
+		public float TX { get; set; }
 
-		public float TY = 0;
+		[FieldProperty]
+		public float TY { get; set; }
 
 		/// <summary>
 		/// Appends the given Matrix to this Matrix.

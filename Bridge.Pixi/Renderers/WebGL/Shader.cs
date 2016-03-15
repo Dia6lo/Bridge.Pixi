@@ -20,29 +20,35 @@ namespace Bridge.Pixi
 		/// <summary>
 		/// The fragment shader as an array of strings.
 		/// </summary>
+		[FieldProperty]
 		[Name("fragmentSrc")]
-		public string FragmentSource;
+		public string FragmentSource { get; set; }
 
 		/// <summary>
 		/// The current WebGL drawing context.
 		/// </summary>
-		public readonly IWebGLRenderingContext GL;
+		[FieldProperty]
+		[Name("gl")]
+		public IWebGLRenderingContext GL { get; }
 
 		/// <summary>
 		/// The WebGL program.
 		/// </summary>
-		public readonly object Program;
+		[FieldProperty]
+		public object Program { get; }
 
 		/// <summary>
 		/// A unique id.
 		/// </summary>
-		public readonly int UID;
+		[FieldProperty]
+		public int UID { get; }
 
 		/// <summary>
 		/// The vertex shader as an array of strings.
 		/// </summary>
+		[FieldProperty]
 		[Name("vertexSrc")]
-		public string VertexSource;
+		public string VertexSource { get; set; }
 
 		/// <summary>
 		/// Destroys the shader.

@@ -6,16 +6,20 @@
 	{
 		public extern ShaderManager(WebGLRenderer renderer);
 
+		[FieldProperty]
 		[Name("attribState")]
-		public object[] AttributesState;
+		public object[] AttributesState { get; set; }
 
+		[FieldProperty]
 		[Name("maxAttibs")]
-		public int MaxAttributes;
+		public int MaxAttributes { get; set; }
 
-		public object[] Stack;
+		[FieldProperty]
+		public object[] Stack { get; set; }
 
+		[FieldProperty]
 		[Name("tempAttribState")]
-		public object[] TemporaryAttributeState;
+		public object[] TemporaryAttributeState { get; set; }
 
 		/// <summary>
 		/// Destroys this object.

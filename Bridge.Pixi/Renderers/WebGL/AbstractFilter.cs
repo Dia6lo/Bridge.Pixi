@@ -18,12 +18,14 @@
 		/// <summary>
 		/// The extra padding that the filter might need.
 		/// </summary>
-		public float Padding;
+		[FieldProperty]
+		public float Padding { get; set; }
 
 		/// <summary>
 		/// The uniforms as an object.
 		/// </summary>
-		public object Uniforms;
+		[FieldProperty]
+		public object Uniforms { get; set; }
 
 		/// <summary>
 		/// Applies the filter.

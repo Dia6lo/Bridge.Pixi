@@ -19,14 +19,16 @@ namespace Bridge.Pixi
 		/// <summary>
 		/// Whether or not this ticker should invoke the method Start automatically when a listener is added.
 		/// </summary>
-		public bool AutoStart = false;
+		[FieldProperty]
+		public bool AutoStart { get; set; }
 
 		/// <summary>
 		/// Scalar time value from last frame to this frame.
 		/// This value is capped by setting MinFPS and is scaled with Speed.
 		/// Note: The cap may be exceeded by scaling.
 		/// </summary>
-		public float DeltaTime = 1f;
+		[FieldProperty]
+		public float DeltaTime { get; set; }
 
 		// TODO: This property also returns DOMHighResTimeStamp.
 		/// <summary>
@@ -34,16 +36,18 @@ namespace Bridge.Pixi
 		/// Opposed to what the DeltaTime is based, this value is neither capped nor scaled.
 		/// If the platform supports DOMHighResTimeStamp, this value will have a precision of 1 µs.
 		/// </summary>
+		[FieldProperty]
 		[Name("elapsedMS")]
-		public float Elapsed = 1f;
+		public float Elapsed { get; set; }
 
 		/// <summary>
 		/// The frames per second at which this ticker is running.
 		/// The default is approximately 60 in most modern browsers.
 		/// Note: This does not factor in the value of Speed, which is specific to scaling DeltaTime.
 		/// </summary>
+		[FieldProperty]
 		[Name("FPS")]
-		public readonly float FPS;
+		public float FPS { get; }
 
 		// TODO: This property also returns DOMHighResTimeStamp.
 		/// <summary>
@@ -52,20 +56,23 @@ namespace Bridge.Pixi
 		/// but only when a new animation frame is requested.
 		/// If the platform supports DOMHighResTimeStamp, this value will have a precision of 1 µs.
 		/// </summary>
-		public readonly float LastTime;
+		[FieldProperty]
+		public float LastTime { get; }
 
 		/// <summary>
 		/// Manages the maximum amount of milliseconds allowed to elapse between invoking Update.
 		/// This value is used to cap DeltaTime, but does not effect the measured value of FPS.
 		/// When setting this property it is clamped to a value between 0 and Pixi.TargetFPMS * 1000.
 		/// </summary>
+		[FieldProperty]
 		[Name("minFPS")]
-		public float MinFPS = 10f;
+		public float MinFPS { get; set; }
 
 		/// <summary>
 		/// Factor of DeltaTime.
 		/// </summary>
-		public float Speed = 1f;
+		[FieldProperty]
+		public float Speed { get; set; }
 
 		/// <summary>
 		/// Whether or not this ticker has been started.
@@ -73,7 +80,8 @@ namespace Bridge.Pixi
 		/// False if Stop has been called.
 		/// While false, this value may change to true in the event of AutoStart being true and a listener is added.
 		/// </summary>
-		public bool Started;
+		[FieldProperty]
+		public bool Started { get; set; }
 
 		/// <summary>
 		/// Calls module:eventemitter3.EventEmitter#on internally for the internal 'tick' event.

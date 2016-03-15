@@ -18,70 +18,83 @@ namespace Bridge.Pixi
 		/// <summary>
 		/// Stores filter data for the render target.
 		/// </summary>
-		public object[] FilterStack;
+		[FieldProperty]
+		public object[] FilterStack { get; set; }
 
 		/// <summary>
 		/// The frame.
 		/// </summary>
-		public Rectangle Frame;
+		[FieldProperty]
+		public Rectangle Frame { get; set; }
 
 		// TODO.
 		/// <summary>
 		/// INTERFACE IS NOT IMPLEMENTED YET.
 		/// </summary>
-		public object FrameBuffer;
+		[FieldProperty]
+		public object FrameBuffer { get; set; }
 
 		/// <summary>
 		/// The current WebGL drawing context.
 		/// </summary>
+		[FieldProperty]
 		[Name("gl")]
-		public IWebGLRenderingContext GL;
+		public IWebGLRenderingContext GL { get; set; }
 
 		/// <summary>
 		/// The projection matrix.
 		/// </summary>
-		public Matrix ProjectionMatrix;
+		[FieldProperty]
+		public Matrix ProjectionMatrix { get; set; }
 
 		/// <summary>
 		/// The current resolution.
 		/// </summary>
-		public Resolution Resolution;
+		[FieldProperty]
+		public Resolution Resolution { get; set; }
 
 		/// <summary>
 		/// Whether this object is the root element or not.
 		/// </summary>
-		public bool Root;
+		[FieldProperty]
+		public bool Root { get; set; }
 
 		/// <summary>
 		/// The scale mode.
 		/// </summary>
-		public ScaleMode ScaleMode;
+		[FieldProperty]
+		public ScaleMode ScaleMode { get; set; }
 
 		/// <summary>
 		/// The size of the object as a rectangle.
 		/// </summary>
-		public Rectangle Size;
+		[FieldProperty]
+		public Rectangle Size { get; set; }
 
 		// TODO.
 		/// <summary>
 		/// INTERFACE IS NOT IMPLEMENTED YET.
 		/// </summary>
-		public object StencilBuffer;
+		[FieldProperty]
+		public object StencilBuffer { get; set; }
 
 		/// <summary>
 		/// The data structure for the stencil masks.
 		/// </summary>
-		public StencilMaskStack StencilMaskStack;
+		[FieldProperty]
+		public StencilMaskStack StencilMaskStack { get; set; }
 
 		/// <summary>
 		/// The texture.
 		/// </summary>
-		public Texture Texture;
+		[FieldProperty]
+		public Texture Texture { get; set; }
 
 		/// <summary>
 		/// The object's transform.
 		/// </summary>
-		public Matrix Transform;
+		[FieldProperty]
+		public Matrix Transform { get; set; }
 
 		/// <summary>
 		/// Binds the buffers and initializes the viewport.

@@ -13,16 +13,19 @@
 		/// <summary>
 		/// Internal count.
 		/// </summary>
-		public int Count;
+		[FieldProperty]
+		public int Count { get; set; }
 
 		/// <summary>
 		/// TODO @alvin
 		/// </summary>
-		public bool Reverse;
+		[FieldProperty]
+		public bool Reverse { get; set; }
 
 		/// <summary>
 		/// The actual stack.
 		/// </summary>
-		public object[] StencilStack;
+		[FieldProperty]
+		public object[] StencilStack { get; set; }
 	}
 }

@@ -10,18 +10,21 @@ namespace Bridge.Pixi
 		/// <summary>
 		/// Whether the render view should be resized automatically.
 		/// </summary>
-		public bool AutoResize;
+		[FieldProperty]
+		public bool AutoResize { get; set; }
 
 		/// <summary>
 		/// The background color to fill if not transparent.
 		/// </summary>
-		public int BackgroundColor;
+		[FieldProperty]
+		public int BackgroundColor { get; set; }
 
 		// TODO
 		/// <summary>
 		/// INTERFACE IS NOT IMPLEMENTED YET.
 		/// </summary>
-		public object BlendModes;
+		[FieldProperty]
+		public object BlendModes { get; set; }
 
 		/// <summary>
 		/// This sets if the CanvasRenderer will clear the canvas or not before the new render pass.
@@ -30,42 +33,50 @@ namespace Bridge.Pixi
 		/// to clear the canvas every frame. Disable this by setting this to false.
 		/// For example if your game has a canvas filling background image you often don't need this set.
 		/// </summary>
-		public bool ClearBeforeRender;
+		[FieldProperty]
+		public bool ClearBeforeRender { get; set; }
 
 		/// <summary>
 		/// The height of the canvas view.
 		/// </summary>
-		public float Height;
+		[FieldProperty]
+		public float Height { get; set; }
 
 		/// <summary>
 		/// Whether or not the contents of the stencil buffer is retained after rendering.
 		/// </summary>
-		public bool PreserveDrawingBuffer;
+		[FieldProperty]
+		public bool PreserveDrawingBuffer { get; set; }
 
 		/// <summary>
 		/// The resolution of the renderer.
 		/// </summary>
-		public Resolution Resolution;
+		[FieldProperty]
+		public Resolution Resolution { get; set; }
 
 		/// <summary>
 		/// Whether the render view is transparent.
 		/// </summary>
-		public bool Transparent;
+		[FieldProperty]
+		public bool Transparent { get; set; }
 
 		/// <summary>
 		/// The type of the renderer.
 		/// </summary>
-		public RendererType Type;
+		[FieldProperty]
+		public RendererType Type { get; set; }
 
 		/// <summary>
 		/// The canvas element that everything is drawn to.
 		/// </summary>
-		public CanvasElement View;
+		[FieldProperty]
+		public CanvasElement View { get; set; }
 
 		/// <summary>
 		/// The width of the canvas view.
 		/// </summary>
-		public float Width;
+		[FieldProperty]
+		public float Width { get; set; }
 
 		/// <summary>
 		/// Removes everything from the renderer.

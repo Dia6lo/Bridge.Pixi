@@ -10,7 +10,8 @@
 		/// <summary>
 		/// The renderer this manager works for.
 		/// </summary>
-		public WebGLRenderer Renderer;
+		[FieldProperty]
+		public WebGLRenderer Renderer { get; set; }
 
 		/// <summary>
 		/// Generic destroy methods to be overridden by the subclass.

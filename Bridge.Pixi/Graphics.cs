@@ -11,38 +11,45 @@
 		/// <summary>
 		/// The blend mode to be applied to the graphic shape. Apply a value of Normal to reset the blend mode.
 		/// </summary>
-		public BlendMode BlendMode;
+		[FieldProperty]
+		public BlendMode BlendMode { get; set; }
 
 		/// <summary>
 		/// The bounds' padding used for bounds calculation.
 		/// </summary>
-		public float BoundsPadding;
+		[FieldProperty]
+		public float BoundsPadding { get; set; }
 
 		/// <summary>
 		/// The alpha value used when filling the Graphics object.
 		/// </summary>
-		public float FillAlpha = 1;
+		[FieldProperty]
+		public float FillAlpha { get; set; }
 
 		/// <summary>
 		/// Whether this shape is being used as a mask.
 		/// </summary>
-		public bool IsMask;
+		[FieldProperty]
+		public bool IsMask { get; set; }
 
 		/// <summary>
 		/// The color of any lines drawn.
 		/// </summary>
-		public int LineColor = 0;
+		[FieldProperty]
+		public int LineColor { get; set; }
 
 		/// <summary>
 		/// The width (thickness) of any lines drawn.
 		/// </summary>
-		public float LineWidth = 0;
+		[FieldProperty]
+		public float LineWidth { get; set; }
 
 		/// <summary>
 		/// The tint applied to the graphic shape. This is a hex value.
 		/// A value of 0xFFFFFF will remove any tint effect.
 		/// </summary>
-		public int Tint;
+		[FieldProperty]
+		public int Tint { get; set; }
 
 		/// <summary>
 		/// Creates an arc/curve (used to create circles, or parts of circles).

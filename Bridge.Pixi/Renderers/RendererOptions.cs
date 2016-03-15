@@ -9,42 +9,50 @@ namespace Bridge.Pixi
 		/// <summary>
 		/// The canvas to use as a view.
 		/// </summary>
-		public CanvasElement View = null;
+		[FieldProperty]
+		public CanvasElement View { get; set; }
 
 		/// <summary>
 		/// If the render view is transparent.
 		/// </summary>
-		public bool Transparent = false;
+		[FieldProperty]
+		public bool Transparent { get; set; }
 
 		/// <summary>
 		/// Sets antialias (only applicable in Chrome at the moment).
 		/// </summary>
-		public bool Antialias = false;
+		[FieldProperty]
+		public bool Antialias { get; set; }
 
 		/// <summary>
 		/// Enables drawing buffer preservation, enable this if you need to call ToDataUrl on the WebGL context.
 		/// </summary>
-		public bool PreserveDrawingBuffer = false;
+		[FieldProperty]
+		public bool PreserveDrawingBuffer { get; set; }
 
 		/// <summary>
 		/// The resolution of the renderer.
 		/// </summary>
-		public Resolution Resolution = Resolution.Normal;
+		[FieldProperty]
+		public Resolution Resolution { get; set; }
 
 		/// <summary>
 		/// The background color of the rendered area (shown if not transparent).
 		/// </summary>
-		public int BackgroundColor = 0x000000;
+		[FieldProperty]
+		public int BackgroundColor { get; set; }
 
 		/// <summary>
 		/// If the render view is automatically resized.
 		/// </summary>
-		public bool AutoResize = false;
+		[FieldProperty]
+		public bool AutoResize { get; set; }
 
 		/// <summary>
 		/// This sets if the CanvasRenderer will clear the canvas or not before the new render pass.
 		/// If you wish to set this to false, you must set PreserveDrawingBuffer to true.
 		/// </summary>
-		public bool ClearBeforeRender = true;
+		[FieldProperty]
+		public bool ClearBeforeRender { get; set; }
 	}
 }

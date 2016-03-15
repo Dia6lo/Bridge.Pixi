@@ -13,7 +13,8 @@
 		public extern WebGLRenderer(float width, float height, WebGLRendererOptions options = null);
 
 		// TODO
-		public object BlendModeManager;
+		[FieldProperty]
+		public object BlendModeManager { get; set; }
 
 		// TODO
 		public extern object Renderer
@@ -30,19 +31,24 @@
 		}
 
 		// TODO
-		public object DrawCount;
+		[FieldProperty]
+		public object DrawCount { get; set; }
 
 		// TODO
-		public object FilterManager;
+		[FieldProperty]
+		public object FilterManager { get; set; }
 
 		// TODO
-		public object MaskManager;
+		[FieldProperty]
+		public object MaskManager { get; set; }
 
 		// TODO
-		public object ShaderManager;
+		[FieldProperty]
+		public object ShaderManager { get; set; }
 
 		// TODO
-		public object StencilManager;
+		[FieldProperty]
+		public object StencilManager { get; set; }
 
 		// TODO
 		public extern void DestroyTexture(object texture);
@@ -61,7 +67,8 @@
 		/// <summary>
 		/// Forces FXAA antialiasing to be used over native. FXAA is faster, but may not always look as great.
 		/// </summary>
+		[FieldProperty]
 		[Name("forceFXAA")]
-		public bool ForceFXAA = false;
+		public bool ForceFXAA { get; set; }
 	}
 }

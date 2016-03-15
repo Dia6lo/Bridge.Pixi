@@ -11,7 +11,8 @@
 		/// <summary>
 		/// The opacity of the object.
 		/// </summary>
-		public float Alpha;
+		[FieldProperty]
+		public float Alpha { get; set; }
 
 		/// <summary>
 		/// Retrieves the bounds of the DisplayObject as a rectangle object
@@ -24,20 +25,23 @@
 		/// It can provide a performance benefit for complex static DisplayObjects.
 		/// To remove simply set this property to 'null'.
 		/// </summary>
-		public bool? CacheAsBitmap;
+		[FieldProperty]
+		public bool? CacheAsBitmap { get; set; }
 
 		/// <summary>
 		/// The area the filter is applied to. This is used as more of an optimisation rather than
 		/// figuring out the dimensions of the DisplayObject each frame you can set this rectangle.
 		/// </summary>
-		public Rectangle FilterArea;
+		[FieldProperty]
+		public Rectangle FilterArea { get; set; }
 
 		/// <summary>
 		/// Sets the filters for the DisplayObject.
 		/// IMPORTANT: This is a WebGL only feature and will be ignored by the canvas renderer.
 		/// To remove filters simply set this property to null.
 		/// </summary>
-		public AbstractFilter[] Filters;
+		[FieldProperty]
+		public AbstractFilter[] Filters { get; set; }
 
 		/// <summary>
 		/// Retrieves the local bounds of the DisplayObject as a rectangle object.
@@ -52,7 +56,8 @@
 		/// This allows for much faster masking in canvas as it utilises shape clipping.
 		/// To remove a mask, set this property to null.
 		/// </summary>
-		public Any<Graphics, Sprite> Mask;
+		[FieldProperty]
+		public Any<Graphics, Sprite> Mask { get; set; }
 
 		/// <summary>
 		/// The display object container that contains this display object.
@@ -66,59 +71,70 @@
 		/// <summary>
 		/// The pivot point of the displayObject that it rotates around.
 		/// </summary>
-		public Point Pivot;
+		[FieldProperty]
+		public Point Pivot { get; set; }
 
 		/// <summary>
 		/// The coordinate of the object relative to the local coordinates of the parent.
 		/// </summary>
-		public Point Position;
+		[FieldProperty]
+		public Point Position { get; set; }
 
 		/// <summary>
 		/// Can this object be rendered, if false the object will not be drawn but the
 		/// UpdateTransform methods will still be called.
 		/// </summary>
-		public bool Renderable;
+		[FieldProperty]
+		public bool Renderable { get; set; }
 
 		/// <summary>
 		/// The rotation of the object in radians.
 		/// </summary>
-		public float Rotation;
+		[FieldProperty]
+		public float Rotation { get; set; }
 
 		/// <summary>
 		/// The scale factor of the object.
 		/// </summary>
-		public Point Scale;
+		[FieldProperty]
+		public Point Scale { get; set; }
 
 		/// <summary>
 		/// The visibility of the object.
 		/// If false the object will not be drawn, and the updateTransform function will not be called.
 		/// </summary>
-		public bool Visible;
+		[FieldProperty]
+		public bool Visible { get; set; }
 
 		/// <summary>
 		/// The multiplied alpha of the DisplayObject.
 		/// </summary>
-		public readonly float WorldAlpha;
+		[FieldProperty]
+		public float WorldAlpha { get; }
 
 		/// <summary>
 		/// Current transform of the object based on world (parent) factors.
 		/// </summary>
-		public readonly Matrix WorldTransform;
+		[FieldProperty]
+		public Matrix WorldTransform { get; }
 
 		/// <summary>
 		/// Indicates if the sprite is globally visible.
 		/// </summary>
-		public readonly bool WorldVisible;
+		[FieldProperty]
+		public bool WorldVisible { get; }
 
 		/// <summary>
 		/// The position of the displayObject on the x axis relative to the local coordinates of the parent.
 		/// </summary>
-		public float X;
+		[FieldProperty]
+		public float X { get; set; }
 
 		/// <summary>
 		/// The position of the displayObject on the y axis relative to the local coordinates of the parent.
 		/// </summary>
-		public float Y;
+		[FieldProperty]
+		public float Y { get; set; }
 
 		/// <summary>
 		/// Base destroy method for generic display objects.

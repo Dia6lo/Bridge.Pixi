@@ -36,64 +36,76 @@ namespace Bridge.Pixi
 		/// Set to true once the base texture has successfully loaded.
 		/// This is never true if the underlying source fails to load or has no texture data.
 		/// </summary>
-		public readonly bool HasLoaded;
+		[FieldProperty]
+		public bool HasLoaded { get; }
 
 		/// <summary>
 		/// The height of the base texture set when the image has loaded.
 		/// </summary>
-		public readonly float Height;
+		[FieldProperty]
+		public float Height { get; }
 
+		[FieldProperty]
 		[Name("imageUrl")]
-		public string ImageURL;
+		public string ImageURL { get; set; }
 
 		/// <summary>
 		/// Set to true if the source is currently loading. If an Image source is loading
 		/// the 'loaded' or 'error' event will be dispatched when the operation ends.
 		/// An underlying source that is immediately-available bypasses loading entirely.
 		/// </summary>
-		public readonly bool IsLoading;
+		[FieldProperty]
+		public bool IsLoading { get; }
 
 		/// <summary>
 		/// Set this to true if a mipmap of this texture needs to be generated.
 		/// This value needs to be set before the texture is used.
 		/// Also the texture must be a power of two size to work.
 		/// </summary>
-		public bool Mipmap;
+		[FieldProperty]
+		public bool Mipmap { get; set; }
 
 		/// <summary>
 		/// Controls if RGB channels should be pre-multiplied by Alpha (WebGL only).
 		/// </summary>
-		public bool PremultipliedAlpha;
+		[FieldProperty]
+		public bool PremultipliedAlpha { get; set; }
 
 		/// <summary>
 		/// Used to store the actual height of the source of this texture.
 		/// </summary>
-		public readonly float RealHeight;
+		[FieldProperty]
+		public float RealHeight { get; }
 
 		/// <summary>
 		/// Used to store the actual width of the source of this texture.
 		/// </summary>
-		public readonly float RealWidth;
+		[FieldProperty]
+		public float RealWidth { get; }
 
 		/// <summary>
 		/// The Resolution of the texture.
 		/// </summary>
-		public Resolution Resolution;
+		[FieldProperty]
+		public Resolution Resolution { get; set; }
 
 		/// <summary>
 		/// The scale mode to apply when scaling this texture.
 		/// </summary>
-		public ScaleMode ScaleMode;
+		[FieldProperty]
+		public ScaleMode ScaleMode { get; set; }
 
 		/// <summary>
 		/// The image source that is used to create the texture.
 		/// </summary>
-		public readonly Any<ImageElement, CanvasElement> Source;
+		[FieldProperty]
+		public Any<ImageElement, CanvasElement> Source { get; }
 
 		/// <summary>
 		/// The width of the base texture set when the image has loaded.
 		/// </summary>
-		public readonly float Width;
+		[FieldProperty]
+		public float Width { get; }
 
 		/// <summary>
 		/// Destroys this base texture.
