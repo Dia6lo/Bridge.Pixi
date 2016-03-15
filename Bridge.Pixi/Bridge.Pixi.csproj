@@ -38,6 +38,8 @@
     <Compile Include="BlendMode.cs" />
     <Compile Include="Graphics.cs" />
     <Compile Include="Renderers\WebGL\AbstractFilter.cs" />
+    <Compile Include="Renderers\WebGL\Shader.cs" />
+    <Compile Include="Renderers\WebGL\ShaderManager.cs" />
     <Compile Include="Textures\BaseTexture.cs" />
     <Compile Include="Container.cs" />
     <Compile Include="DisplayObject.cs" />
@@ -60,6 +62,7 @@
     <Compile Include="Renderers\WebGL\StencilMaskStack.cs" />
     <Compile Include="Textures\Texture.cs" />
     <Compile Include="Ticker.cs" />
+    <Compile Include="Renderers\WebGL\WebGLManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Bridge, Version=1.11.0.0, Culture=neutral, processorArchitecture=MSIL">

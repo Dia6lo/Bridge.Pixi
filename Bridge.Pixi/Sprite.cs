@@ -58,11 +58,11 @@
 		/// </summary>
 		public override extern Rectangle LocalBounds { get; }
 
-		// TODO
 		/// <summary>
-		/// INTERFACE IS NOT IMPLEMENTED YET.
+		/// The shader that will be used to render the sprite.
+		/// Set to null to remove a current shader.
 		/// </summary>
-		public object Shader;
+		public Shader Shader;
 
 		/// <summary>
 		/// The texture that the sprite is using.
