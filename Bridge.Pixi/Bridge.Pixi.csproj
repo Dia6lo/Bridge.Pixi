@@ -38,8 +38,13 @@
     <Compile Include="BlendMode.cs" />
     <Compile Include="Graphics.cs" />
     <Compile Include="Renderers\WebGL\AbstractFilter.cs" />
+    <Compile Include="Renderers\WebGL\BlendModeManager.cs" />
+    <Compile Include="Renderers\WebGL\FilterManager.cs" />
+    <Compile Include="Renderers\WebGL\MaskManager.cs" />
+    <Compile Include="Renderers\WebGL\ObjectRenderer.cs" />
     <Compile Include="Renderers\WebGL\Shader.cs" />
     <Compile Include="Renderers\WebGL\ShaderManager.cs" />
+    <Compile Include="Renderers\WebGL\StencilManager.cs" />
     <Compile Include="Textures\BaseTexture.cs" />
     <Compile Include="Container.cs" />
     <Compile Include="DisplayObject.cs" />

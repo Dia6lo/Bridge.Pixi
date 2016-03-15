@@ -16,11 +16,11 @@
 		/// <summary>
 		/// Generic destroy methods to be overridden by the subclass.
 		/// </summary>
-		public abstract void Destroy();
+		public virtual extern void Destroy();
 
 		/// <summary>
 		/// Generic method called when there is a WebGL context change.
 		/// </summary>
-		public abstract void OnContextChange();
+		public virtual extern void OnContextChange();
 	}
 }

@@ -12,52 +12,78 @@
 	{
 		public extern WebGLRenderer(float width, float height, WebGLRendererOptions options = null);
 
-		// TODO
+		/// <summary>
+		/// Manages the BlendModes.
+		/// </summary>
 		[FieldProperty]
-		public object BlendModeManager { get; set; }
+		public BlendModeManager BlendModeManager { get; set; }
 
-		// TODO
-		public extern object Renderer
+		/// <summary>
+		/// The currently active ObjectRenderer.
+		/// </summary>
+		public ObjectRenderer Renderer
 		{
 			[Template("currentRenderer")] get;
 			[Template("setObjectRenderer({0})")] set;
 		}
 
-		// TODO
-		public extern object RenderTarget
+		/// <summary>
+		/// Holds the current render target.
+		/// </summary>
+		public extern RenderTarget RenderTarget
 		{
 			[Template("currentRenderTarget")] get;
 			[Template("setRenderTarget({0})")] set;
 		}
 
-		// TODO
+		/// <summary>
+		/// Counter for the number of draws made each frame
+		/// </summary>
 		[FieldProperty]
-		public object DrawCount { get; set; }
+		public int DrawCount { get; set; }
 
-		// TODO
+		/// <summary>
+		/// Manages the filters.
+		/// </summary>
 		[FieldProperty]
-		public object FilterManager { get; set; }
+		public FilterManager FilterManager { get; set; }
 
-		// TODO
+		/// <summary>
+		/// Manages the masks using the stencil buffer.
+		/// </summary>
 		[FieldProperty]
-		public object MaskManager { get; set; }
+		public MaskManager MaskManager { get; set; }
 
-		// TODO
+		/// <summary>
+		/// Deals with managing the shader programs and their attributes.
+		/// </summary>
 		[FieldProperty]
-		public object ShaderManager { get; set; }
+		public ShaderManager ShaderManager { get; set; }
 
-		// TODO
+		/// <summary>
+		/// Manages the stencil buffer.
+		/// </summary>
 		[FieldProperty]
-		public object StencilManager { get; set; }
+		public StencilManager StencilManager { get; set; }
 
-		// TODO
-		public extern void DestroyTexture(object texture);
+		/// <summary>
+		/// Deletes the texture from WebGL.
+		/// </summary>
+		/// <param name="texture">The texture to destroy.</param>
+		public extern void DestroyTexture(Any<BaseTexture, Texture> texture);
 
-		// TODO
-		public extern void RenderDisplayObject(object displayObject, object renderTarget);
+		/// <summary>
+		/// Renders a Display Object.
+		/// </summary>
+		/// <param name="displayObject">The DisplayObject to render.</param>
+		/// <param name="renderTarget">The render target to use to render this display object.</param>
+		public extern void RenderDisplayObject(DisplayObject displayObject, RenderTarget renderTarget);
 
-		// TODO
-		public extern void UpdateTexture(object texture);
+		/// <summary>
+		/// Updates and/or Creates a WebGL texture for the renderer's context.
+		/// </summary>
+		/// <param name="texture">The texture to update.</param>
+		public extern void UpdateTexture(Any<BaseTexture, Texture> texture);
 	}
 
 	[External]
@@ -65,7 +91,8 @@
 	public class WebGLRendererOptions : RendererOptions
 	{
 		/// <summary>
-		/// Forces FXAA antialiasing to be used over native. FXAA is faster, but may not always look as great.
+		/// Forces FXAA antialiasing to be used over native.
+		/// FXAA is faster, but may not always look as great.
 		/// </summary>
 		[FieldProperty]
 		[Name("forceFXAA")]
