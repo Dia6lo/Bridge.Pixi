@@ -16,28 +16,33 @@ namespace Bridge.Pixi
 		/// <summary>
 		/// The canvas 2D context that everything is drawn with.
 		/// </summary>
-		public CanvasRenderingContext2D Context;
+		[FieldProperty]
+		public CanvasRenderingContext2D Context { get; set; }
 
 		/// <summary>
 		/// Instance of a CanvasMaskManager, handles masking when using the canvas renderer.
 		/// </summary>
-		public CanvasMaskManager MaskManager;
+		[FieldProperty]
+		public CanvasMaskManager MaskManager { get; set; }
 
 		/// <summary>
 		/// Boolean flag controlling canvas refresh.
 		/// </summary>
-		public bool Refresh;
+		[FieldProperty]
+		public bool Refresh { get; set; }
 
 		/// <summary>
 		/// If true Pixi will Math.Floor() x/y values when rendering, stopping pixel interpolation.
 		/// Handy for crisp pixel art and speed on legacy devices.
 		/// </summary>
-		public bool RoundPixels;
+		[FieldProperty]
+		public bool RoundPixels { get; set; }
 
 		/// <summary>
 		/// The canvas property used to set the canvas smoothing property.
 		/// </summary>
-		public string SmoothProperty;
+		[FieldProperty]
+		public string SmoothProperty { get; set; }
 	}
 
 	[External]
@@ -48,6 +53,7 @@ namespace Bridge.Pixi
 		/// If true Pixi will Math.Floor() x/y values when rendering, stopping pixel interpolation.
 		/// Handy for crisp pixel art and speed on legacy devices.
 		/// </summary>
-		public bool RoundPixels = false;
+		[FieldProperty]
+		public bool RoundPixels { get; set; }
 	}
 }

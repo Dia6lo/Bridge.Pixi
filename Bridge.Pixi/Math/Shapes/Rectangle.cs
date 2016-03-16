@@ -11,23 +11,29 @@
 		/// <summary>
 		/// A constant empty rectangle.
 		/// </summary>
+		[FieldProperty]
 		[Name("EMPTY")]
-		public static readonly Rectangle Empty;
+		public static Rectangle Empty { get; }
 
 		public extern Rectangle(float x, float y, float width, float height);
 
-		public float Height;
+		[FieldProperty]
+		public float Height { get; set; }
 
-		public float Width;
+		[FieldProperty]
+		public float Width { get; set; }
 
-		public float X;
+		[FieldProperty]
+		public float X { get; set; }
 
-		public float Y;
+		[FieldProperty]
+		public float Y { get; set; }
 
 		/// <summary>
 		/// The type of the object, mainly used to avoid instanceof checks.
 		/// </summary>
-		public ShapeType Type;
+		[FieldProperty]
+		public ShapeType Type { get; set; }
 
 		/// <summary>
 		/// Creates a clone of this Rectangle.

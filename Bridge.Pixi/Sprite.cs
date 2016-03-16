@@ -35,13 +35,14 @@
 		/// Setting the anchor to 0.5,0.5 means the texture's origin is centered.
 		/// Setting the anchor to 1,1 would mean the texture's origin point will be the bottom right corner.
 		/// </summary>
-		public Point Anchor;
+		[FieldProperty]
+		public Point Anchor { get; set; }
 
-		// TODO
 		/// <summary>
-		/// INTERFACE IS NOT IMPLEMENTED YET.
+		/// The blend mode to be applied to the sprite. Apply a value of Normal to reset the blend mode.
 		/// </summary>
-		public int BlendMode;
+		[FieldProperty]
+		public BlendMode BlendMode { get; set; }
 
 		/// <summary>
 		/// Returns the bounds of the Sprite as a rectangle.
@@ -52,29 +53,33 @@
 		/// <summary>
 		/// An internal cached value of the tint.
 		/// </summary>
-		public int CachedTint = 0xFFFFFF;
+		[FieldProperty]
+		public int CachedTint { get; set; }
 
 		/// <summary>
 		/// Gets the local bounds of the sprite object.
 		/// </summary>
 		public override extern Rectangle LocalBounds { get; }
 
-		// TODO
 		/// <summary>
-		/// INTERFACE IS NOT IMPLEMENTED YET.
+		/// The shader that will be used to render the sprite.
+		/// Set to null to remove a current shader.
 		/// </summary>
-		public object Shader;
+		[FieldProperty]
+		public Shader Shader { get; set; }
 
 		/// <summary>
 		/// The texture that the sprite is using.
 		/// </summary>
-		public Texture Texture;
+		[FieldProperty]
+		public Texture Texture { get; set; }
 
 		/// <summary>
 		/// The tint applied to the sprite. This is a hex value.
 		/// A value of 0xFFFFFF will remove any tint effect.
 		/// </summary>
-		public int Tint;
+		[FieldProperty]
+		public int Tint { get; set; }
 
 		/// <summary>
 		/// Tests if a point is inside this sprite.

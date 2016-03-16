@@ -14,8 +14,9 @@ namespace Bridge.Pixi
 		/// <summary>
 		/// An empty texture, used often to not have to create multiple empty textures.
 		/// </summary>
+		[FieldProperty]
 		[Name("EMPTY")]
-		public static readonly Texture Empty;
+		public static Texture Empty { get; }
 
 		// TODO.
 		/// <summary>
@@ -82,50 +83,59 @@ namespace Bridge.Pixi
 		/// <summary>
 		/// The base texture that this texture uses.
 		/// </summary>
-		public BaseTexture BaseTexture;
+		[FieldProperty]
+		public BaseTexture BaseTexture { get; set; }
 
 		/// <summary>
 		/// This is the area of the BaseTexture image to actually copy to the
 		/// Canvas/WebGL when rendering, irrespective of the actual frame size or placement
 		/// (which can be influenced by trimmed texture atlases).
 		/// </summary>
-		public Rectangle Crop;
+		[FieldProperty]
+		public Rectangle Crop { get; set; }
 
 		/// <summary>
 		/// The frame specifies the region of the base texture that this texture uses.
 		/// </summary>
-		public Rectangle Frame;
+		[FieldProperty]
+		public Rectangle Frame { get; set; }
 
 		/// <summary>
 		/// The height of the Texture in pixels.
 		/// </summary>
-		public float Height;
+		[FieldProperty]
+		public float Height { get; set; }
 
 		/// <summary>
 		/// Does this Texture have any frame data assigned to it?
 		/// </summary>
-		public bool NoFrame;
+		[FieldProperty]
+		public bool NoFrame { get; set; }
 
 		/// <summary>
 		/// This will let a renderer know that a texture has been updated (used mainly for WebGL UV updates).
 		/// </summary>
-		public bool RequiresUpdate;
+		[FieldProperty]
+		public bool RequiresUpdate { get; set; }
 
 		/// <summary>
 		/// The texture trim data.
 		/// </summary>
-		public Rectangle Trim;
+		[FieldProperty]
+		public Rectangle Trim { get; set; }
 
 		/// <summary>
 		/// This will let the renderer know if the texture is valid.
 		/// If it's not then it cannot be rendered.
 		/// </summary>
-		public bool Valid;
+		[FieldProperty]
+		public bool Valid { get; set; }
 
 		/// <summary>
 		/// The width of the Texture in pixels.
 		/// </summary>
-		public float Width;
+		[FieldProperty]
+		public float Width { get; set; }
 
 		/// <summary>
 		/// Creates a new texture object that acts the same as this one.

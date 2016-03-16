@@ -10,9 +10,11 @@
 	{
 		public extern Point(float x = 0f, float y = 0f);
 
-		public float X = 0f;
+		[FieldProperty]
+		public float X { get; set; }
 
-		public float Y = 0f;
+		[FieldProperty]
+		public float Y { get; set; }
 
 		/// <summary>
 		/// Creates a clone of this point.
