@@ -45,6 +45,7 @@
     <Compile Include="Renderers\WebGL\Shader.cs" />
     <Compile Include="Renderers\WebGL\ShaderManager.cs" />
     <Compile Include="Renderers\WebGL\StencilManager.cs" />
+    <Compile Include="Text.cs" />
     <Compile Include="Textures\BaseTexture.cs" />
     <Compile Include="Container.cs" />
     <Compile Include="DisplayObject.cs" />
