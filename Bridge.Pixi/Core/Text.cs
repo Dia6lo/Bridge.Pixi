@@ -70,11 +70,10 @@ namespace Bridge.Pixi
 		public Any<string, int> Fill { get; set; }
 
 		/// <summary>
-		/// Alignment for multiline text ('left', 'center' or 'right'),
-		/// does not affect single line text.
+		/// Alignment for multiline text, does not affect single line text.
 		/// </summary>
 		[FieldProperty]
-		public string Align { get; set; }
+		public TextAlign Align { get; set; }
 
 		/// <summary>
 		/// A canvas fillstyle that will be used on the text stroke e.g 'blue', '#FCFF00'.

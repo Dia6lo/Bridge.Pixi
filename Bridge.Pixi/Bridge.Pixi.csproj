@@ -47,6 +47,12 @@
     <Compile Include="Core\Renderers\Canvas\CanvasTinter.cs" />
     <Compile Include="Core\DrawMode.cs" />
     <Compile Include="Core\Graphics.cs" />
+    <Compile Include="Extras\BitmapText.cs" />
+    <Compile Include="Extras\Font.cs" />
+    <Compile Include="Extras\Frame.cs" />
+    <Compile Include="Extras\MovieClip.cs" />
+    <Compile Include="Core\TextAlign.cs" />
+    <Compile Include="Extras\TilingSprite.cs" />
     <Compile Include="Interaction\InteractionData.cs" />
     <Compile Include="Interaction\InteractionManager.cs" />
     <Compile Include="Loaders\Loader.cs" />
@@ -110,7 +116,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Extras\" />
     <Folder Include="Filters\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
