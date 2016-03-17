@@ -7,7 +7,7 @@
 	[External]
 	[Name("PIXI.DRAW_MODES")]
 	[Enum(Emit.Name)]
-	public enum DrawModes
+	public enum DrawMode
 	{
 		[Name("POINTS")]
 		Points,
