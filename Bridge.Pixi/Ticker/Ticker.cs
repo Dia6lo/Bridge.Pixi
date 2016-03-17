@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Bridge.Pixi
+namespace Bridge.Pixi.Ticker
 {
 	/// <summary>
 	/// A Ticker class that runs an update loop that other objects listen to.

@@ -15,11 +15,6 @@
 		public float Alpha { get; set; }
 
 		/// <summary>
-		/// Retrieves the bounds of the DisplayObject as a rectangle object
-		/// </summary>
-		public virtual extern Rectangle Bounds { get; }
-
-		/// <summary>
 		/// Set this to true if you want this display object to be cached as a bitmap.
 		/// This basically takes a snap shot of the display object as it is at that moment.
 		/// It can provide a performance benefit for complex static DisplayObjects.
@@ -150,6 +145,13 @@
 		/// <param name="resolution">The resolution of the texture being generated.</param>
 		/// <returns></returns>
 		public extern Texture GenerateTexture(SystemRenderer renderer, ScaleMode scaleMode, Resolution resolution);
+
+		/// <summary>
+		/// Retrieves the bounds of the DisplayObject as a rectangle object.
+		/// </summary>
+		/// <param name="matrix">The transformation matrix of the sprite.</param>
+		/// <returns>The framing rectangle.</returns>
+		public extern Rectangle GetBounds(Matrix matrix = null);
 
 		/// <summary>
 		/// Calculates the global position of the display object.

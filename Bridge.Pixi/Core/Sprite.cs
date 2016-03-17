@@ -45,12 +45,6 @@
 		public BlendMode BlendMode { get; set; }
 
 		/// <summary>
-		/// Returns the bounds of the Sprite as a rectangle.
-		/// The bounds calculation takes the WorldTransform into account.
-		/// </summary>
-		public override extern Rectangle Bounds { get; }
-
-		/// <summary>
 		/// An internal cached value of the tint.
 		/// </summary>
 		[FieldProperty]

@@ -21,7 +21,7 @@ namespace Bridge.Pixi
 		/// </summary>
 		[FieldProperty]
 		[Name("ticker.shared")]
-		public static Ticker SharedTicker { get; set; }
+		public static Ticker.Ticker SharedTicker { get; set; }
 
 		/// <summary>
 		/// Target frames per millisecond.

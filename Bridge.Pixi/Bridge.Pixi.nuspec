@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Bridge.Pixi</id>
-    <version>1.6.0</version>
+    <version>1.7.0</version>
     <authors>Andrey Andreev</authors>
     <description>Pixi.js installation into Bridge.NET projects. WARNING: This package is HIGHLY volatile. Use at your own risk.</description>
     <dependencies>
