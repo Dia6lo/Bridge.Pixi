@@ -2,11 +2,15 @@
 <package >
   <metadata>
     <id>Bridge.Pixi</id>
-    <version>1.7.0</version>
+    <version>1.8.0</version>
     <authors>Andrey Andreev</authors>
     <description>Pixi.js installation into Bridge.NET projects. WARNING: This package is HIGHLY volatile. Use at your own risk.</description>
     <dependencies>
       <dependency id="Bridge" version="1.11.2" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="bin\Release\Bridge.Pixi.dll" target="lib\Net40" />
+    <file src="bin\Release\Bridge.Pixi.xml" target="lib\Net40" />
+  </files>
 </package>

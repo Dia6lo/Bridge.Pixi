@@ -1,4 +1,4 @@
-version: 1.7.0-{build}
+version: 1.8.0-{build}
 
 before_build:
   - nuget restore
@@ -6,6 +6,8 @@ before_build:
 build:
   publish_nuget: true
   verbosity: minimal
+
+configuration: Release
 
 deploy:
 - provider: NuGet
