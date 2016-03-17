@@ -9,12 +9,6 @@
 	public class Container : DisplayObject
 	{
 		/// <summary>
-		/// Retrieves the bounds of the Container as a rectangle.
-		/// The bounds calculation takes all visible children into consideration.
-		/// </summary>
-		public override extern Rectangle Bounds { get; }
-
-		/// <summary>
 		/// The array of children of this container.
 		/// </summary>
 		[FieldProperty]
