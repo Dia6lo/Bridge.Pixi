@@ -45,7 +45,7 @@
     <Compile Include="Core\Renderers\Canvas\CanvasBuffer.cs" />
     <Compile Include="Core\Renderers\Canvas\CanvasGraphics.cs" />
     <Compile Include="Core\Renderers\Canvas\CanvasTinter.cs" />
-    <Compile Include="Core\DrawModes.cs" />
+    <Compile Include="Core\DrawMode.cs" />
     <Compile Include="Core\Graphics.cs" />
     <Compile Include="Interaction\InteractionData.cs" />
     <Compile Include="Interaction\InteractionManager.cs" />
