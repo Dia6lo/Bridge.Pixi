@@ -165,11 +165,11 @@
 		/// <param name="radius">Radius of the rectangle corners.</param>
 		public extern Graphics DrawRoundedRect(float x, float y, float width, float height, float radius);
 
-		// TODO.
 		/// <summary>
-		/// INTERFACE IS NOT IMPLEMENTED YET.
+		/// Draws the given shape to this Graphics object. Can be any of Circle, Rectangle,
+		/// Ellipse or Polygon.
 		/// </summary>
-		public extern Graphics DrawShape(object shape);
+		public extern GraphicsData DrawShape(Any<Circle, Rectangle, Ellipse, Polygon> shape);
 
 		/// <summary>
 		/// Applies a fill to the lines and shapes that were added since the last call to the BeginFill method.

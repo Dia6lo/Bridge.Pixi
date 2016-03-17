@@ -36,17 +36,33 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="BlendMode.cs" />
+    <Compile Include="GraphicsData.cs" />
+    <Compile Include="Math\Shapes\Circle.cs" />
+    <Compile Include="Math\Shapes\Ellipse.cs" />
+    <Compile Include="Math\Shapes\Polygon.cs" />
+    <Compile Include="Math\Shapes\RoundedRectangle.cs" />
+    <Compile Include="ParticleContainer.cs" />
+    <Compile Include="Renderers\Canvas\CanvasBuffer.cs" />
+    <Compile Include="Renderers\Canvas\CanvasGraphics.cs" />
+    <Compile Include="Renderers\Canvas\CanvasTinter.cs" />
     <Compile Include="DrawModes.cs" />
     <Compile Include="Graphics.cs" />
     <Compile Include="Loaders\Loader.cs" />
-    <Compile Include="Renderers\WebGL\AbstractFilter.cs" />
-    <Compile Include="Renderers\WebGL\BlendModeManager.cs" />
-    <Compile Include="Renderers\WebGL\FilterManager.cs" />
-    <Compile Include="Renderers\WebGL\MaskManager.cs" />
+    <Compile Include="Renderers\WebGL\Filters\AbstractFilter.cs" />
+    <Compile Include="Renderers\WebGL\Filters\FXAAFilter.cs" />
+    <Compile Include="Renderers\WebGL\Filters\SpriteMaskFilter.cs" />
+    <Compile Include="Renderers\WebGL\Managers\BlendModeManager.cs" />
+    <Compile Include="Renderers\WebGL\Managers\FilterManager.cs" />
+    <Compile Include="Renderers\WebGL\Managers\MaskManager.cs" />
     <Compile Include="Renderers\WebGL\ObjectRenderer.cs" />
-    <Compile Include="Renderers\WebGL\Shader.cs" />
-    <Compile Include="Renderers\WebGL\ShaderManager.cs" />
-    <Compile Include="Renderers\WebGL\StencilManager.cs" />
+    <Compile Include="Renderers\WebGL\Quad.cs" />
+    <Compile Include="Renderers\WebGL\Shaders\Shader.cs" />
+    <Compile Include="Renderers\WebGL\Managers\ShaderManager.cs" />
+    <Compile Include="Renderers\WebGL\Shaders\ComplexPrimitiveShader.cs" />
+    <Compile Include="Renderers\WebGL\Shaders\ParticleShader.cs" />
+    <Compile Include="Renderers\WebGL\Shaders\PrimitiveShader.cs" />
+    <Compile Include="Renderers\WebGL\Shaders\TextureShader.cs" />
+    <Compile Include="Renderers\WebGL\Managers\StencilManager.cs" />
     <Compile Include="Text.cs" />
     <Compile Include="Textures\BaseTexture.cs" />
     <Compile Include="Container.cs" />
@@ -68,9 +84,11 @@
     <Compile Include="Math\Shapes\ShapeType.cs" />
     <Compile Include="Sprite.cs" />
     <Compile Include="Renderers\WebGL\StencilMaskStack.cs" />
+    <Compile Include="Textures\RenderTexture.cs" />
     <Compile Include="Textures\Texture.cs" />
+    <Compile Include="Textures\VideoBaseTexture.cs" />
     <Compile Include="Ticker.cs" />
-    <Compile Include="Renderers\WebGL\WebGLManager.cs" />
+    <Compile Include="Renderers\WebGL\Managers\WebGLManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Bridge, Version=1.11.0.0, Culture=neutral, processorArchitecture=MSIL">

@@ -1,4 +1,5 @@
-﻿using Bridge.Html5;
+﻿using System.Collections.Generic;
+using Bridge.Html5;
 
 namespace Bridge.Pixi
 {
@@ -24,7 +25,7 @@ namespace Bridge.Pixi
 		/// INTERFACE IS NOT IMPLEMENTED YET.
 		/// </summary>
 		[FieldProperty]
-		public object BlendModes { get; set; }
+		public Dictionary<BlendMode, object> BlendModes { get; set; }
 
 		/// <summary>
 		/// This sets if the CanvasRenderer will clear the canvas or not before the new render pass.
