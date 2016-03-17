@@ -53,6 +53,32 @@
     <Compile Include="Extras\MovieClip.cs" />
     <Compile Include="Core\TextAlign.cs" />
     <Compile Include="Extras\TilingSprite.cs" />
+    <Compile Include="Filters\AsciiFilter.cs" />
+    <Compile Include="Filters\BloomFilter.cs" />
+    <Compile Include="Filters\BlurDirFilter.cs" />
+    <Compile Include="Filters\BlurFilter.cs" />
+    <Compile Include="Filters\BlurXFilter.cs" />
+    <Compile Include="Filters\BlurYFilter.cs" />
+    <Compile Include="Filters\BlurYTintFilter.cs" />
+    <Compile Include="Filters\ColorMatrixFilter.cs" />
+    <Compile Include="Filters\ConvolutionFilter.cs" />
+    <Compile Include="Filters\CrossHatchFilter.cs" />
+    <Compile Include="Filters\DisplacementFilter.cs" />
+    <Compile Include="Filters\DotScreenFilter.cs" />
+    <Compile Include="Filters\DropShadowFilter.cs" />
+    <Compile Include="Filters\GrayFilter.cs" />
+    <Compile Include="Filters\InvertFilter.cs" />
+    <Compile Include="Filters\NoiseFilter.cs" />
+    <Compile Include="Filters\PixelateFilter.cs" />
+    <Compile Include="Filters\TwistFilter.cs" />
+    <Compile Include="Filters\RGBSplitFilter.cs" />
+    <Compile Include="Filters\SepiaFilter.cs" />
+    <Compile Include="Filters\ShockwaveFilter.cs" />
+    <Compile Include="Filters\SmartBlurFilter.cs" />
+    <Compile Include="Filters\TiltShiftAxisFilter.cs" />
+    <Compile Include="Filters\TiltShiftFilter.cs" />
+    <Compile Include="Filters\TiltShiftXFilter.cs" />
+    <Compile Include="Filters\TiltShiftYFilter.cs" />
     <Compile Include="Interaction\InteractionData.cs" />
     <Compile Include="Interaction\InteractionManager.cs" />
     <Compile Include="Loaders\Loader.cs" />
@@ -115,9 +141,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Filters\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Bridge.1.11.2\build\Bridge.targets" Condition="Exists('..\packages\Bridge.1.11.2\build\Bridge.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
