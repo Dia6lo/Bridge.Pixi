@@ -47,6 +47,8 @@
     <Compile Include="Core\Renderers\Canvas\CanvasTinter.cs" />
     <Compile Include="Core\DrawModes.cs" />
     <Compile Include="Core\Graphics.cs" />
+    <Compile Include="Interaction\InteractionData.cs" />
+    <Compile Include="Interaction\InteractionManager.cs" />
     <Compile Include="Loaders\Loader.cs" />
     <Compile Include="Core\Renderers\WebGL\Filters\AbstractFilter.cs" />
     <Compile Include="Core\Renderers\WebGL\Filters\FXAAFilter.cs" />
@@ -106,7 +108,6 @@
   <ItemGroup>
     <Folder Include="Extras\" />
     <Folder Include="Filters\" />
-    <Folder Include="Interaction\" />
     <Folder Include="Mesh\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
