@@ -9,8 +9,8 @@ namespace Bridge.Pixi.Mesh
 	[Namespace("PIXI.mesh")]
 	public class Mesh: Container
 	{
-		public extern Mesh(Texture texture, Float32Array vertices, Float32Array uvs,
-			Uint16Array indices, DrawMode drawMode);
+		public extern Mesh(Texture texture, Float32Array vertices = null, Float32Array uvs = null,
+			Uint16Array indices = null, DrawMode? drawMode = null);
 
 		/// <summary>
 		/// The blend mode to be applied to the sprite. Apply a value of Normal to reset the blend mode.

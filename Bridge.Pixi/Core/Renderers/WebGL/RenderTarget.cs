@@ -27,7 +27,7 @@ namespace Bridge.Pixi
 		[FieldProperty]
 		public Rectangle Frame { get; set; }
 
-		// TODO.
+		// TODO: This is WebGLFramebuffer.
 		/// <summary>
 		/// INTERFACE IS NOT IMPLEMENTED YET.
 		/// </summary>

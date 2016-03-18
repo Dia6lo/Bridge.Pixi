@@ -27,7 +27,7 @@ namespace Bridge.Pixi.Interaction
 		/// The target Sprite that was interacted with.
 		/// </summary>
 		[FieldProperty]
-		public Sprite Target { get; set; }
+		public DisplayObject Target { get; set; }
 
 		/// <summary>
 		/// Maps two Rectangle to the quad.

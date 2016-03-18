@@ -88,7 +88,7 @@ namespace Bridge.Pixi
 		/// <param name="options">The optional renderer parameters.</param>
 		/// <param name="noWebGL">Prevents selection of WebGL renderer, even if such is present.</param>
 		/// <returns>Returns WebGL renderer if available, otherwise CanvasRenderer.</returns>
-		public static extern SystemRenderer AutoDetectRenderer(float width, float height,
+		public static extern IRenderer AutoDetectRenderer(float width, float height,
 			RendererOptions options = null, bool noWebGL = false);
 	}
 }

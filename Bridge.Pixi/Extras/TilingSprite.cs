@@ -15,7 +15,7 @@ namespace Bridge.Pixi.Extras
 		/// <param name="width">The width of the tiling sprite.</param>
 		/// <param name="height">The height of the tiling sprite.</param>
 		/// <returns>A new TilingSprite using a texture from the texture cache matching the frameId.</returns>
-		public static extern MovieClip FromFrame(string frameId, float width, float height);
+		public static extern MovieClip FromFrame(string frameId, float width = 100, float height = 100);
 
 		/// <summary>
 		/// Helper function that creates a sprite that will contain a texture based on an image url.
@@ -27,8 +27,8 @@ namespace Bridge.Pixi.Extras
 		/// <param name="crossorigin">If you want to specify the cross-origin parameter.</param>
 		/// <param name="scaleMode">The scale mode of the texture.</param>
 		/// <returns>A new TilingSprite using a texture from the texture cache matching the image id.</returns>
-		public static extern MovieClip FromImage(string imageId, float width, float height,
-			bool crossorigin = true, ScaleMode scaleMode = ScaleMode.Default);
+		public static extern MovieClip FromImage(string imageId, float width = 100, float height = 100,
+			bool crossorigin = false, ScaleMode scaleMode = ScaleMode.Default);
 
 		/// <summary>
 		/// A short hand way of creating a movieclip from an array of image urls.
@@ -36,7 +36,7 @@ namespace Bridge.Pixi.Extras
 		/// <param name="images">The array of image urls the MovieClip will use as its texture frames.</param>
 		public static extern MovieClip FromImages(string[] images);
 
-		public extern TilingSprite(Texture texture, float width, float height);
+		public extern TilingSprite(Texture texture, float width = 100, float height = 100);
 
 		/// <summary>
 		/// The offset position of the image that is being tiled.

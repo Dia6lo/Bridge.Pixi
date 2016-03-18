@@ -6,7 +6,7 @@
 	/// </summary>
 	[External]
 	[Namespace("PIXI")]
-	public class RoundedRectangle
+	public class RoundedRectangle : IShape, IHitArea
 	{
 		public extern RoundedRectangle(float x, float y, float width, float height);
 

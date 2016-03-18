@@ -48,7 +48,7 @@ namespace Bridge.Pixi
 		/// <param name="imageUrl">The image url of the texture.</param>
 		/// <param name="crossorigin">Whether requests should be treated as crossorigin.</param>
 		/// <param name="scaleMode">The scale mode of the texture.</param>
-		public static extern Texture FromImage(string imageUrl, bool crossorigin = true,
+		public static extern Texture FromImage(string imageUrl, bool crossorigin = false,
 			ScaleMode scaleMode = ScaleMode.Default);
 
 		/// <summary>

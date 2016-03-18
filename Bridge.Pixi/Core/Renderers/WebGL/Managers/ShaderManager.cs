@@ -41,6 +41,6 @@
 		/// Sets the current shader.
 		/// </summary>
 		/// <param name="shader">The shader to upload.</param>
-		public extern void SetShader(Shader shader);
+		public extern bool SetShader(Shader shader);
 	}
 }

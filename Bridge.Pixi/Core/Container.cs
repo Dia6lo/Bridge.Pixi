@@ -56,6 +56,18 @@
 		public extern void Destroy(bool destroyChildren = false);
 
 		/// <summary>
+		/// Useful function that returns a texture of the display object that can then be used to create sprites.
+		/// This can be quite useful if your displayObject is static/complicated and needs to be reused multiple times.
+		/// </summary>
+		/// <param name="renderer">The renderer used to generate the texture.</param>
+		/// <param name="scaleMode">The scale mode of the texture being generated.</param>
+		/// <param name="resolution">The resolution of the texture being generated.</param>
+		/// <returns></returns>
+		[Template("generateTexture({renderer}, {resolution}, {scaleMode})")]
+		public override extern Texture GenerateTexture(IRenderer renderer,
+			ScaleMode scaleMode = ScaleMode.Default, Resolution? resolution = null);
+
+		/// <summary>
 		/// Returns the child at the specified index.
 		/// </summary>
 		/// <param name="index">The index to get the child at.</param>

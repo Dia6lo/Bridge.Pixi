@@ -13,8 +13,7 @@ namespace Bridge.Pixi.Ticker
 	[Namespace("PIXI.ticker")]
 	public class Ticker
 	{
-		public delegate void UpdateDelegate();
-		public delegate void UpdateFromCurrentTimeDelegate(float time);
+		public delegate void UpdateDelegate(float time);
 
 		/// <summary>
 		/// Whether or not this ticker should invoke the method Start automatically when a listener is added.
@@ -90,16 +89,7 @@ namespace Bridge.Pixi.Ticker
 		/// <param name="fn">The listener function to be added for updates.</param>
 		/// <param name="context">The listener context.</param>
 		/// <returns>This.</returns>
-		public extern Ticker Add(UpdateDelegate fn, Action context = null);
-
-		/// <summary>
-		/// Calls module:eventemitter3.EventEmitter#on internally for the internal 'tick' event.
-		/// It checks if the emitter has listeners, and if so it requests a new animation frame at this point.
-		/// </summary>
-		/// <param name="fn">The listener function to be added for updates.</param>
-		/// <param name="context">The listener context.</param>
-		/// <returns>this</returns>
-		public extern Ticker Add(UpdateFromCurrentTimeDelegate fn, Action context = null);
+		public extern Ticker Add(UpdateDelegate fn, object context = null);
 
 		/// <summary>
 		/// Calls module:eventemitter3.EventEmitter#once internally for the internal 'tick' event.
@@ -108,16 +98,7 @@ namespace Bridge.Pixi.Ticker
 		/// <param name="fn">The listener function to be added for one update.</param>
 		/// <param name="context">The listener context.</param>
 		/// <returns>this</returns>
-		public extern Ticker AddOnce(UpdateDelegate fn, Action context = null);
-
-		/// <summary>
-		/// Calls module:eventemitter3.EventEmitter#once internally for the internal 'tick' event.
-		/// It checks if the emitter has listeners, and if so it requests a new animation frame at this point.
-		/// </summary>
-		/// <param name="fn">The listener function to be added for one update.</param>
-		/// <param name="context">The listener context.</param>
-		/// <returns>this</returns>
-		public extern Ticker AddOnce(UpdateFromCurrentTimeDelegate fn, Action context = null);
+		public extern Ticker AddOnce(UpdateDelegate fn, object context = null);
 
 		/// <summary>
 		/// Calls module:eventemitter3.EventEmitter#off internally for 'tick' event.
@@ -126,16 +107,7 @@ namespace Bridge.Pixi.Ticker
 		/// <param name="fn">The listener function to be removed.</param>
 		/// <param name="context">The listener context to be removed.</param>
 		/// <returns>this</returns>
-		public extern Ticker Remove(UpdateDelegate fn, Action context = null);
-
-		/// <summary>
-		/// Calls module:eventemitter3.EventEmitter#off internally for 'tick' event.
-		/// It checks if the emitter has listeners for 'tick' event. If it does, then it cancels the animation frame.
-		/// </summary>
-		/// <param name="fn">The listener function to be removed.</param>
-		/// <param name="context">The listener context to be removed.</param>
-		/// <returns>this</returns>
-		public extern Ticker Remove(UpdateFromCurrentTimeDelegate fn, Action context = null);
+		public extern Ticker Remove(UpdateDelegate fn, object context = null);
 
 		/// <summary>
 		/// Starts the ticker. If the ticker has listeners a new animation frame is requested at this point.

@@ -12,7 +12,7 @@ namespace Bridge.Pixi.Interaction
 	[Namespace("PIXI.interaction")]
 	public class InteractionManager
 	{
-		public extern InteractionManager(SystemRenderer renderer, InteractionManagerOptions options);
+		public extern InteractionManager(IRenderer renderer, InteractionManagerOptions options = null);
 
 		/// <summary>
 		/// Should default browser actions automatically be prevented.
@@ -30,7 +30,7 @@ namespace Bridge.Pixi.Interaction
 		/// An event data object to handle all the event tracking/dispatching.
 		/// </summary>
 		[FieldProperty]
-		public object EventData { get; set; }
+		public EventData EventData { get; set; }
 
 		/// <summary>
 		/// As this frequency increases the interaction events will be checked more often.
@@ -72,7 +72,7 @@ namespace Bridge.Pixi.Interaction
 		/// The renderer this interaction manager works for.
 		/// </summary>
 		[FieldProperty]
-		public SystemRenderer Renderer { get; set; }
+		public IRenderer Renderer { get; set; }
 
 		/// <summary>
 		/// The current resolution.
@@ -97,8 +97,8 @@ namespace Bridge.Pixi.Interaction
 		public extern void MapPositionToPoint(Point point, float x, float y);
 
 		// TODO
-		public extern bool ProcessInteractive(Point point, object displayObject, object func,
-			bool hitTest, bool interactive);
+		public extern bool ProcessInteractive(Point point, DisplayObject displayObject,
+			Action<DisplayObject, bool> func, bool hitTest, bool interactive);
 
 		/// <summary>
 		/// Updates the state of interactive objects.
@@ -122,5 +122,22 @@ namespace Bridge.Pixi.Interaction
 		/// </summary>
 		[FieldProperty]
 		public int InteractionFrequency { get; set; }
+	}
+
+	[External]
+	[ObjectLiteral]
+	public class EventData
+	{
+		[FieldProperty]
+		public bool Stopped { get; set; }
+
+		[FieldProperty]
+		public object Target { get; set; }
+
+		[FieldProperty]
+		public object Type { get; set; }
+
+		[FieldProperty]
+		public InteractionData Data { get; set; }
 	}
 }

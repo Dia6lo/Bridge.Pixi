@@ -16,9 +16,6 @@
 		[FieldProperty]
 		public int Count { get; set; }
 
-		/// <summary>
-		/// TODO @alvin
-		/// </summary>
 		[FieldProperty]
 		public bool Reverse { get; set; }
 

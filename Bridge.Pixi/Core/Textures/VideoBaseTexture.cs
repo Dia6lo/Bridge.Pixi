@@ -15,7 +15,7 @@ namespace Bridge.Pixi
 
 		public static extern VideoBaseTexture FromVideo(VideoElement video, ScaleMode scaleMode);
 
-		public extern VideoBaseTexture(VideoElement source, ScaleMode scaleMode);
+		public extern VideoBaseTexture(VideoElement source, ScaleMode scaleMode = ScaleMode.Default);
 
 		/// <summary>
 		/// Should the base texture automatically update itself, set to true by default.

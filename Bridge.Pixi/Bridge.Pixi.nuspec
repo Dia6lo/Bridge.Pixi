@@ -2,9 +2,13 @@
 <package >
   <metadata>
     <id>Bridge.Pixi</id>
-    <version>1.8.0</version>
-    <authors>Andrey Andreev</authors>
-    <description>Pixi.js installation into Bridge.NET projects. WARNING: This package is HIGHLY volatile. Use at your own risk.</description>
+    <version>3.0.10.0</version>
+    <authors>Andrey Andreev</authors>    
+    <licenseUrl>https://github.com/Dia6lo/Bridge.Pixi/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Dia6lo/Bridge.Pixi</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Pixi.js installation into Bridge.NET projects. WARNING: This package doesn't have major/minor version separation, as it mimics targeted pixi.js version (except for last number of version). So, think of every version as of major and breaking.</description>
+    <tags>C# bridge bridge.net pixi pixi-js</tags>
     <dependencies>
       <dependency id="Bridge" version="1.11.2" />
     </dependencies>

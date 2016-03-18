@@ -11,7 +11,7 @@ namespace Bridge.Pixi
 	[Namespace("PIXI")]
 	public class CanvasRenderer: SystemRenderer
 	{
-		public extern CanvasRenderer(float width, float height, CanvasRendererOptions options = null);
+		public extern CanvasRenderer(float width = 800, float height = 600, RendererOptions options = null);
 
 		/// <summary>
 		/// The canvas 2D context that everything is drawn with.
@@ -32,28 +32,9 @@ namespace Bridge.Pixi
 		public bool Refresh { get; set; }
 
 		/// <summary>
-		/// If true Pixi will Math.Floor() x/y values when rendering, stopping pixel interpolation.
-		/// Handy for crisp pixel art and speed on legacy devices.
-		/// </summary>
-		[FieldProperty]
-		public bool RoundPixels { get; set; }
-
-		/// <summary>
 		/// The canvas property used to set the canvas smoothing property.
 		/// </summary>
 		[FieldProperty]
 		public string SmoothProperty { get; set; }
-	}
-
-	[External]
-	[ObjectLiteral]
-	public class CanvasRendererOptions: RendererOptions
-	{
-		/// <summary>
-		/// If true Pixi will Math.Floor() x/y values when rendering, stopping pixel interpolation.
-		/// Handy for crisp pixel art and speed on legacy devices.
-		/// </summary>
-		[FieldProperty]
-		public bool RoundPixels { get; set; }
 	}
 }

@@ -5,7 +5,7 @@
 	/// </summary>
 	[External]
 	[Namespace("PIXI")]
-	public class Ellipse
+	public class Ellipse : IShape, IHitArea
 	{
 		public extern Ellipse(float x, float y, float width, float height);
 

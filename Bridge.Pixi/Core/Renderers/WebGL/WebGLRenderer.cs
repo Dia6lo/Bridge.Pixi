@@ -10,7 +10,7 @@
 	[Namespace("PIXI")]
 	public class WebGLRenderer: SystemRenderer
 	{
-		public extern WebGLRenderer(float width, float height, WebGLRendererOptions options = null);
+		public extern WebGLRenderer(float width = 800, float height = 600, RendererOptions options = null);
 
 		/// <summary>
 		/// Manages the BlendModes.
@@ -84,18 +84,5 @@
 		/// </summary>
 		/// <param name="texture">The texture to update.</param>
 		public extern void UpdateTexture(Any<BaseTexture, Texture> texture);
-	}
-
-	[External]
-	[ObjectLiteral]
-	public class WebGLRendererOptions : RendererOptions
-	{
-		/// <summary>
-		/// Forces FXAA antialiasing to be used over native.
-		/// FXAA is faster, but may not always look as great.
-		/// </summary>
-		[FieldProperty]
-		[Name("forceFXAA")]
-		public bool ForceFXAA { get; set; }
 	}
 }
