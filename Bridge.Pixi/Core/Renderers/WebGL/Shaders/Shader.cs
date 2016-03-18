@@ -31,6 +31,7 @@ namespace Bridge.Pixi
 		[Name("gl")]
 		public IWebGLRenderingContext GL { get; }
 
+		// TODO: It's WebGLProgram.
 		/// <summary>
 		/// The WebGL program.
 		/// </summary>

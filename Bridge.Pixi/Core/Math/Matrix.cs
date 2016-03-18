@@ -131,7 +131,7 @@
 		/// </summary>
 		/// <param name="transpose">Whether we need to transpose the matrix or not.</param>
 		/// <returns>The newly created array which contains the matrix</returns>
-		public extern float[] ToArray(bool transpose);
+		public extern float[] ToArray(bool transpose = false);
 
 		/// <summary>
 		/// Translates the matrix on the x and y.

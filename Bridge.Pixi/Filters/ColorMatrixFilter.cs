@@ -57,7 +57,7 @@ namespace Bridge.Pixi.Filters
 		/// If true, current matrix and matrix are multiplied.
 		/// If false, just set the current matrix with provided matrix.
 		/// </param>
-		public extern void BlackAndWhite(bool multiply);
+		public extern void BlackAndWhite(bool multiply = false);
 
 		/// <summary>
 		/// Adjusts brightness.
@@ -67,7 +67,7 @@ namespace Bridge.Pixi.Filters
 		/// If true, current matrix and matrix are multiplied.
 		/// If false, just set the current matrix with provided matrix.
 		/// </param>
-		public extern void Brightness(float brightness, bool multiply);
+		public extern void Brightness(float brightness, bool multiply = false);
 
 		/// <summary>
 		/// Brown delicious browni filter.
@@ -76,7 +76,7 @@ namespace Bridge.Pixi.Filters
 		/// If true, current matrix and matrix are multiplied.
 		/// If false, just set the current matrix with provided matrix.
 		/// </param>
-		public extern void Browni(bool multiply);
+		public extern void Browni(bool multiply = false);
 
 		/// <summary>
 		/// Set the contrast matrix, increase the separation between dark and bright.
@@ -88,7 +88,7 @@ namespace Bridge.Pixi.Filters
 		/// If true, current matrix and matrix are multiplied.
 		/// If false, just set the current matrix with provided matrix.
 		/// </param>
-		public extern void Contrast(float amount, bool multiply);
+		public extern void Contrast(float amount, bool multiply = false);
 
 		/// <summary>
 		/// Desaturate image (remove color).
@@ -97,7 +97,7 @@ namespace Bridge.Pixi.Filters
 		/// If true, current matrix and matrix are multiplied.
 		/// If false, just set the current matrix with provided matrix.
 		/// </param>
-		public extern void Desaturate(bool multiply);
+		public extern void Desaturate(bool multiply = false);
 
 		/// <summary>
 		/// Set the matrices in grey scales.
@@ -107,7 +107,7 @@ namespace Bridge.Pixi.Filters
 		/// If true, current matrix and matrix are multiplied.
 		/// If false, just set the current matrix with provided matrix.
 		/// </param>
-		public extern void Greyscale(float scale, bool multiply);
+		public extern void Greyscale(float scale, bool multiply = false);
 
 		/// <summary>
 		/// Set the hue property of the color.
@@ -117,7 +117,7 @@ namespace Bridge.Pixi.Filters
 		/// If true, current matrix and matrix are multiplied.
 		/// If false, just set the current matrix with provided matrix.
 		/// </param>
-		public extern void Hue(float scale, bool multiply);
+		public extern void Hue(float scale, bool multiply = false);
 
 		/// <summary>
 		/// Color reversal film introduced by Eastman Kodak in 1935.
@@ -126,7 +126,7 @@ namespace Bridge.Pixi.Filters
 		/// If true, current matrix and matrix are multiplied.
 		/// If false, just set the current matrix with provided matrix.
 		/// </param>
-		public extern void Kodachrome(bool multiply);
+		public extern void Kodachrome(bool multiply = false);
 
 		/// <summary>
 		/// Negative image (inverse of classic rgb matrix).
@@ -135,7 +135,7 @@ namespace Bridge.Pixi.Filters
 		/// If true, current matrix and matrix are multiplied.
 		/// If false, just set the current matrix with provided matrix.
 		/// </param>
-		public extern void Negative(bool multiply);
+		public extern void Negative(bool multiply = false);
 
 		/// <summary>
 		/// Polaroid filter.
@@ -144,7 +144,7 @@ namespace Bridge.Pixi.Filters
 		/// If true, current matrix and matrix are multiplied.
 		/// If false, just set the current matrix with provided matrix.
 		/// </param>
-		public extern void Polaroid(bool multiply);
+		public extern void Polaroid(bool multiply = false);
 
 		/// <summary>
 		/// Set the saturation matrix, increase the separation between colors.
@@ -155,7 +155,7 @@ namespace Bridge.Pixi.Filters
 		/// If true, current matrix and matrix are multiplied.
 		/// If false, just set the current matrix with provided matrix.
 		/// </param>
-		public extern void Saturate(float amount, bool multiply);
+		public extern void Saturate(float amount, bool multiply = false);
 
 		/// <summary>
 		/// Sepia image.
@@ -164,7 +164,7 @@ namespace Bridge.Pixi.Filters
 		/// If true, current matrix and matrix are multiplied.
 		/// If false, just set the current matrix with provided matrix.
 		/// </param>
-		public extern void Sepia(bool multiply);
+		public extern void Sepia(bool multiply = false);
 
 		/// <summary>
 		/// Color motion picture process invented in 1916.
@@ -173,7 +173,7 @@ namespace Bridge.Pixi.Filters
 		/// If true, current matrix and matrix are multiplied.
 		/// If false, just set the current matrix with provided matrix.
 		/// </param>
-		public extern void Technicolor(bool multiply);
+		public extern void Technicolor(bool multiply = false);
 
 		/// <summary>
 		/// Filter who transforms : Red -> Blue and Blue -> Red.
@@ -183,6 +183,6 @@ namespace Bridge.Pixi.Filters
 		/// If false, just set the current matrix with provided matrix.
 		/// </param>
 		[Name("toBGR")]
-		public extern void ToBGR(bool multiply);
+		public extern void ToBGR(bool multiply = false);
 	}
 }

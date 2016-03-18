@@ -13,7 +13,7 @@ namespace Bridge.Pixi
 	{
 		/// <param name="text">The copy that you would like the text to display.</param>
 		/// <param name="style"></param>
-		public extern Text(string text, TextStyle style);
+		public extern Text(string text = null, TextStyle style = null, Resolution? resolution = null);
 
 		/// <summary>
 		/// The canvas element that everything is drawn to.

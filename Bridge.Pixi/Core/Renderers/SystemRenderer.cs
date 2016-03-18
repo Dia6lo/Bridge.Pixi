@@ -56,6 +56,13 @@ namespace Bridge.Pixi
 		public Resolution Resolution { get; set; }
 
 		/// <summary>
+		/// If true Pixi will Math.Floor() x/y values when rendering, stopping pixel interpolation.
+		/// Handy for crisp pixel art and speed on legacy devices.
+		/// </summary>
+		[FieldProperty]
+		public bool RoundPixels { get; set; }
+
+		/// <summary>
 		/// Whether the render view is transparent.
 		/// </summary>
 		[FieldProperty]

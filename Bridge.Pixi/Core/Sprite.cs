@@ -11,23 +11,23 @@
 		/// Helper function that creates a sprite that will contain a texture from the TextureCache
 		/// based on the frameId The frame ids are created when a Texture packer file has been loaded.
 		/// </summary>
-		/// <param name="frameId">The frame Id of the texture in the cache.</param>
+		/// <param name="imageId">The image url of the texture.</param>
 		/// <param name="crossorigin">if you want to specify the cross-origin parameter.</param>
 		/// <param name="scaleMode">The scale mode of the texture.</param>
 		/// <returns>A new Sprite using a texture from the texture cache matching the frameId.</returns>
-		public static extern Sprite FromFrame(string frameId, bool crossorigin = true,
+		public static extern Sprite FromImage(string imageId, bool crossorigin = false,
 			ScaleMode scaleMode = ScaleMode.Default);
 
 		/// <summary>
 		/// Helper function that creates a sprite that will contain a texture based on an image
 		/// url If the image is not in the texture cache it will be loaded.
 		/// </summary>
-		/// <param name="imageId">The image url of the texture.</param>
+		/// <param name="frameId">The frame Id of the texture in the cache.</param>
 		/// <returns>A new Sprite using a texture from the texture cache matching the image id.</returns>
-		public static extern Sprite FromImage(string imageId);
+		public static extern Sprite FromFrame(string frameId);
 
 		/// <param name="texture">The texture for this sprite.</param>
-		public extern Sprite(Texture texture);
+		public extern Sprite(Texture texture = null);
 
 		/// <summary>
 		/// The anchor sets the origin point of the texture.
@@ -60,7 +60,7 @@
 		/// Set to null to remove a current shader.
 		/// </summary>
 		[FieldProperty]
-		public Shader Shader { get; set; }
+		public Any<Shader, AbstractFilter> Shader { get; set; }
 
 		/// <summary>
 		/// The texture that the sprite is using.

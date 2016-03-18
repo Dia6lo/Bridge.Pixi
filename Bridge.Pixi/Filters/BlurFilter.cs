@@ -27,5 +27,11 @@
 		/// </summary>
 		[FieldProperty]
 		public float BlurY { get; set; }
+
+		/// <summary>
+		/// Sets the number of passes for blur. More passes means higher quaility bluring.
+		/// </summary>
+		[FieldProperty]
+		public int Passes { get; set; }
 	}
 }

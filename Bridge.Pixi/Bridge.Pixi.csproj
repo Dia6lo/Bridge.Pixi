@@ -48,6 +48,7 @@
     <Compile Include="Core\Renderers\Canvas\CanvasTinter.cs" />
     <Compile Include="Core\DrawMode.cs" />
     <Compile Include="Core\Graphics.cs" />
+    <Compile Include="External\EventEmitter.cs" />
     <Compile Include="Extras\BitmapText.cs" />
     <Compile Include="Extras\Font.cs" />
     <Compile Include="Extras\Frame.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="Filters\BlurYFilter.cs" />
     <Compile Include="Filters\BlurYTintFilter.cs" />
     <Compile Include="Filters\ColorMatrixFilter.cs" />
+    <Compile Include="Filters\ColorStepFilter.cs" />
     <Compile Include="Filters\ConvolutionFilter.cs" />
     <Compile Include="Filters\CrossHatchFilter.cs" />
     <Compile Include="Filters\DisplacementFilter.cs" />
@@ -108,9 +110,15 @@
     <Compile Include="Core\Renderers\Canvas\CanvasMaskManager.cs" />
     <Compile Include="Core\Renderers\Canvas\CanvasRenderer.cs" />
     <Compile Include="Core\Pixi.cs" />
+    <Compile Include="Loaders\LoaderOptions.cs" />
+    <Compile Include="Loaders\Resource.cs" />
+    <Compile Include="Loaders\ResourceLoadType.cs" />
+    <Compile Include="Loaders\XMLHttpRequestReadState.cs" />
+    <Compile Include="Loaders\XMLHttpRequestResponseType.cs" />
     <Compile Include="Mesh\DrawMode.cs" />
     <Compile Include="Mesh\Mesh.cs" />
     <Compile Include="Mesh\MeshShader.cs" />
+    <Compile Include="Mesh\Plane.cs" />
     <Compile Include="Mesh\Rope.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Core\Renderers\RendererOptions.cs" />

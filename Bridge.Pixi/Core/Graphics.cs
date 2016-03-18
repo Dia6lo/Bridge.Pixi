@@ -84,7 +84,7 @@
 		/// </summary>
 		/// <param name="color">The color of the fill.</param>
 		/// <param name="alpha">The alpha of the fill.</param>
-		public extern Graphics BeginFill(int color, float alpha);
+		public extern Graphics BeginFill(int color, float alpha = 1);
 
 		/// <summary>
 		/// Calculate the points for a bezier curve and then draws it.
@@ -121,7 +121,7 @@
 		/// <summary>
 		/// Destroys the Graphics object.
 		/// </summary>
-		public extern void Destroy();
+		public override extern void Destroy();
 
 		/// <summary>
 		/// Draws a circle.
@@ -177,6 +177,17 @@
 		public extern Graphics EndFill();
 
 		/// <summary>
+		/// Useful function that returns a texture of the display object that can then be used to create sprites.
+		/// This can be quite useful if your displayObject is static/complicated and needs to be reused multiple times.
+		/// </summary>
+		/// <param name="renderer">The renderer used to generate the texture.</param>
+		/// <param name="scaleMode">The scale mode of the texture being generated.</param>
+		/// <param name="resolution">The resolution of the texture being generated.</param>
+		/// <returns></returns>
+		public override extern Texture GenerateTexture(SystemRenderer renderer,
+			ScaleMode scaleMode = ScaleMode.Default, Resolution? resolution = null);
+
+		/// <summary>
 		/// Specifies the line style used for subsequent calls to Graphics methods such as the
 		/// LineTo method or the DrawCircle method.
 		/// </summary>
@@ -184,7 +195,7 @@
 		/// <param name="color">Color of the line to draw, will update the objects stored style.</param>
 		/// <param name="alpha">Alpha of the line to draw, will update the objects stored style</param>
 		/// <returns></returns>
-		public extern Graphics LineStyle(float lineWidth, int color = 0, float alpha = 1);
+		public extern Graphics LineStyle(float lineWidth = 0, int color = 0, float alpha = 1);
 
 		/// <summary>
 		/// Draws a line using the current line style from the current drawing position to (x, y);

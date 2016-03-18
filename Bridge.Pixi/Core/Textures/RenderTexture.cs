@@ -9,13 +9,8 @@ namespace Bridge.Pixi
 	[Namespace("PIXI")]
 	public class RenderTexture : Texture
 	{
-		public extern RenderTexture(SystemRenderer renderer, float width, float height,
-			ScaleMode scaleMode, Resolution resolution);
-
-		/// <summary>
-		/// Will return a HTML Image of the texture.
-		/// </summary>
-		public ImageElement Image { get; }
+		public extern RenderTexture(SystemRenderer renderer, float width = 100, float height = 100,
+			ScaleMode scaleMode = ScaleMode.Default, Resolution? resolution = null);
 
 		/// <summary>
 		/// The renderer this RenderTexture uses.
@@ -82,6 +77,6 @@ namespace Bridge.Pixi
 		/// <param name="width">The width to resize to.</param>
 		/// <param name="height">The height to resize to.</param>
 		/// <param name="updateBase">Should the BaseTexture.Width and height values be resized as well?</param>
-		public extern void Resize(float width, float height, bool updateBase);
+		public extern void Resize(float width, float height, bool updateBase = false);
 	}
 }

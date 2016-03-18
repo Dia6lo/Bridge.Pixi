@@ -6,6 +6,10 @@ namespace Bridge.Pixi
 	{
 		public extern SpriteMaskFilter(Sprite sprite);
 
+		public Sprite MaskSprite { get; set; }
+
+		public Matrix MaskMatrix { get; set; }
+
 		/// <summary>
 		/// The texture used for the displacement map. Must be power of 2 sized texture.
 		/// </summary>

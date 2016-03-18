@@ -9,7 +9,7 @@ namespace Bridge.Pixi.Extras
 	[Namespace("PIXI.extras")]
 	public class BitmapText : Container
 	{
-		public extern BitmapText(string text, BitmapTextStyle style);
+		public extern BitmapText(string text, BitmapTextStyle style = null);
 
 		/// <summary>
 		/// The alignment of the BitmapText object.

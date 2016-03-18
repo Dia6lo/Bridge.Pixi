@@ -1,12 +1,13 @@
-﻿namespace Bridge.Pixi
+﻿using Bridge.Pixi.External;
+
+namespace Bridge.Pixi
 {
-	// TODO: This class inherits EventEmitter.
 	/// <summary>
 	/// The base class for all objects that are rendered on the screen.
 	/// </summary>
 	[External]
 	[Namespace("PIXI")]
-	public abstract class DisplayObject
+	public abstract class DisplayObject: EventEmitter
 	{
 		/// <summary>
 		/// The opacity of the object.
@@ -137,6 +138,11 @@
 		public extern void Display();
 
 		/// <summary>
+		/// Base destroy method for generic display objects.
+		/// </summary>
+		public virtual extern void Destroy();
+
+		/// <summary>
 		/// Useful function that returns a texture of the display object that can then be used to create sprites.
 		/// This can be quite useful if your displayObject is static/complicated and needs to be reused multiple times.
 		/// </summary>
@@ -144,7 +150,8 @@
 		/// <param name="scaleMode">The scale mode of the texture being generated.</param>
 		/// <param name="resolution">The resolution of the texture being generated.</param>
 		/// <returns></returns>
-		public extern Texture GenerateTexture(SystemRenderer renderer, ScaleMode scaleMode, Resolution resolution);
+		public virtual extern Texture GenerateTexture(SystemRenderer renderer,
+			ScaleMode scaleMode = ScaleMode.Default, Resolution? resolution = null);
 
 		/// <summary>
 		/// Retrieves the bounds of the DisplayObject as a rectangle object.

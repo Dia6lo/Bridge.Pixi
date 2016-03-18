@@ -6,6 +6,18 @@
 	{
 		public extern MaskManager(WebGLRenderer renderer);
 
+		[FieldProperty]
+		public StencilMaskStack StencilStack { get; set; }
+
+		[FieldProperty]
+		public bool Reverse { get; set; }
+
+		[FieldProperty]
+		public int Count { get; set; }
+
+		[FieldProperty]
+		public object[] AlphaMaskPool { get; set; }
+
 		/// <summary>
 		/// Removes the last mask from the mask stack and doesn't return it.
 		/// </summary>

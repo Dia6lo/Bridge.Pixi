@@ -15,5 +15,9 @@ namespace Bridge.Pixi.Mesh
 		/// An array of points that determine the rope.
 		/// </summary>
 		public Point[] Points { get; set; }
+
+		public int[] Colors { get; set; }
+
+		public extern void Refresh();
 	}
 }

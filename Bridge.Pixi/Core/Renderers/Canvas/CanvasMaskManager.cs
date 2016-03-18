@@ -19,5 +19,7 @@
 		/// <param name="maskData">The mask data that will be pushed.</param>
 		/// <param name="renderer">The renderer context to use.</param>
 		public extern void PushMask(object maskData, SystemRenderer renderer);
+
+		public extern void Destroy();
 	}
 }

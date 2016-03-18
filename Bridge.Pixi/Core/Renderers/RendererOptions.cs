@@ -31,6 +31,21 @@ namespace Bridge.Pixi
 		public bool PreserveDrawingBuffer { get; set; }
 
 		/// <summary>
+		/// If true Pixi will Math.Floor() x/y values when rendering, stopping pixel interpolation.
+		/// Handy for crisp pixel art and speed on legacy devices.
+		/// </summary>
+		[FieldProperty]
+		public bool RoundPixels { get; set; }
+
+		/// <summary>
+		/// Forces FXAA antialiasing to be used over native.
+		/// FXAA is faster, but may not always look as great.
+		/// </summary>
+		[FieldProperty]
+		[Name("forceFXAA")]
+		public bool ForceFXAA { get; set; }
+
+		/// <summary>
 		/// The resolution of the renderer.
 		/// </summary>
 		[FieldProperty]
