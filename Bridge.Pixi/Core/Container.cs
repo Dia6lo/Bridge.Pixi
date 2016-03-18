@@ -64,7 +64,7 @@
 		/// <param name="resolution">The resolution of the texture being generated.</param>
 		/// <returns></returns>
 		[Template("generateTexture({renderer}, {resolution}, {scaleMode})")]
-		public override extern Texture GenerateTexture(SystemRenderer renderer,
+		public override extern Texture GenerateTexture(IRenderer renderer,
 			ScaleMode scaleMode = ScaleMode.Default, Resolution? resolution = null);
 
 		/// <summary>

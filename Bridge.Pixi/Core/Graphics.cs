@@ -169,7 +169,7 @@
 		/// Draws the given shape to this Graphics object. Can be any of Circle, Rectangle,
 		/// Ellipse or Polygon.
 		/// </summary>
-		public extern GraphicsData DrawShape(Any<Circle, Rectangle, Ellipse, Polygon> shape);
+		public extern GraphicsData DrawShape(IShape shape);
 
 		/// <summary>
 		/// Applies a fill to the lines and shapes that were added since the last call to the BeginFill method.
@@ -184,7 +184,7 @@
 		/// <param name="scaleMode">The scale mode of the texture being generated.</param>
 		/// <param name="resolution">The resolution of the texture being generated.</param>
 		/// <returns></returns>
-		public override extern Texture GenerateTexture(SystemRenderer renderer,
+		public override extern Texture GenerateTexture(IRenderer renderer,
 			ScaleMode scaleMode = ScaleMode.Default, Resolution? resolution = null);
 
 		/// <summary>

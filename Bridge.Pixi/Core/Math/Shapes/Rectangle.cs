@@ -6,7 +6,7 @@
 	/// </summary>
 	[External]
 	[Namespace("PIXI")]
-	public class Rectangle
+	public class Rectangle : IShape, IHitArea
 	{
 		/// <summary>
 		/// A constant empty rectangle.

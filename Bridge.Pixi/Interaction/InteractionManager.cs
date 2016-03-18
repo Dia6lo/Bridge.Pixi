@@ -12,7 +12,7 @@ namespace Bridge.Pixi.Interaction
 	[Namespace("PIXI.interaction")]
 	public class InteractionManager
 	{
-		public extern InteractionManager(SystemRenderer renderer, InteractionManagerOptions options = null);
+		public extern InteractionManager(IRenderer renderer, InteractionManagerOptions options = null);
 
 		/// <summary>
 		/// Should default browser actions automatically be prevented.
@@ -72,7 +72,7 @@ namespace Bridge.Pixi.Interaction
 		/// The renderer this interaction manager works for.
 		/// </summary>
 		[FieldProperty]
-		public SystemRenderer Renderer { get; set; }
+		public IRenderer Renderer { get; set; }
 
 		/// <summary>
 		/// The current resolution.

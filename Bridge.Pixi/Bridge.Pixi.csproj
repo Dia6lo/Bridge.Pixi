@@ -40,6 +40,8 @@
     <Compile Include="Core\GraphicsData.cs" />
     <Compile Include="Core\Math\Shapes\Circle.cs" />
     <Compile Include="Core\Math\Shapes\Ellipse.cs" />
+    <Compile Include="Core\Math\Shapes\IHitArea.cs" />
+    <Compile Include="Core\Math\Shapes\IShape.cs" />
     <Compile Include="Core\Math\Shapes\Polygon.cs" />
     <Compile Include="Core\Math\Shapes\RoundedRectangle.cs" />
     <Compile Include="Core\ParticleContainer.cs" />
@@ -48,6 +50,7 @@
     <Compile Include="Core\Renderers\Canvas\CanvasTinter.cs" />
     <Compile Include="Core\DrawMode.cs" />
     <Compile Include="Core\Graphics.cs" />
+    <Compile Include="Core\Renderers\IRenderer.cs" />
     <Compile Include="External\EventEmitter.cs" />
     <Compile Include="Extras\BitmapText.cs" />
     <Compile Include="Extras\Font.cs" />

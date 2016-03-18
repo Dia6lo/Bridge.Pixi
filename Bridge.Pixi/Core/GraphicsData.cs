@@ -5,7 +5,7 @@
 	public class GraphicsData
 	{
 		public extern GraphicsData(float lineWidth, int lineColor, float lineAlpha, int fillColor,
-			float fillAlpha, bool fill, Any<Circle, Rectangle, Ellipse, Polygon> shape);
+			float fillAlpha, bool fill, IShape shape);
 
 		[FieldProperty]
 		public float LineWidth { get; set; }
@@ -26,7 +26,7 @@
 		public bool Fill { get; set; }
 
 		[FieldProperty]
-		public Any<Circle, Rectangle, Ellipse, Polygon> Shape { get; set; }
+		public IShape Shape { get; set; }
 
 		[FieldProperty]
 		public ShapeType Type { get; set; }

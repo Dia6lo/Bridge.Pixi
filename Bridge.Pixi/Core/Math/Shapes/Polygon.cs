@@ -2,7 +2,7 @@ namespace Bridge.Pixi
 {
 	[External]
 	[Namespace("PIXI")]
-	public class Polygon
+	public class Polygon : IShape, IHitArea
 	{
 		/// <param name="points">
 		/// This can be an array of Points that form the polygon, a flat array of numbers that

@@ -2,7 +2,7 @@ namespace Bridge.Pixi
 {
 	[External]
 	[Namespace("PIXI")]
-	public class Circle
+	public class Circle: IShape, IHitArea
 	{
 		public extern Circle(float x, float y, float radius);
 

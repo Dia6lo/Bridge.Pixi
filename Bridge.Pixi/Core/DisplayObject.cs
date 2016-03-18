@@ -150,7 +150,7 @@ namespace Bridge.Pixi
 		/// <param name="scaleMode">The scale mode of the texture being generated.</param>
 		/// <param name="resolution">The resolution of the texture being generated.</param>
 		/// <returns></returns>
-		public virtual extern Texture GenerateTexture(SystemRenderer renderer,
+		public virtual extern Texture GenerateTexture(IRenderer renderer,
 			ScaleMode scaleMode = ScaleMode.Default, Resolution? resolution = null);
 
 		/// <summary>

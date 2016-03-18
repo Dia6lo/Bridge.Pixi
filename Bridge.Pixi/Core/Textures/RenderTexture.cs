@@ -9,7 +9,7 @@ namespace Bridge.Pixi
 	[Namespace("PIXI")]
 	public class RenderTexture : Texture
 	{
-		public extern RenderTexture(SystemRenderer renderer, float width = 100, float height = 100,
+		public extern RenderTexture(IRenderer renderer, float width = 100, float height = 100,
 			ScaleMode scaleMode = ScaleMode.Default, Resolution? resolution = null);
 
 		/// <summary>
@@ -17,7 +17,7 @@ namespace Bridge.Pixi
 		/// A RenderTexture can only belong to one renderer at the moment if its webGL.
 		/// </summary>
 		[FieldProperty]
-		public SystemRenderer Renderer { get; set; }
+		public IRenderer Renderer { get; set; }
 
 		/// <summary>
 		/// The Resolution of the texture.
