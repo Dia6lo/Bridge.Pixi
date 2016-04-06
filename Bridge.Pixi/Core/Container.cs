@@ -1,4 +1,8 @@
-﻿namespace Bridge.Pixi
+﻿using System;
+using Bridge.Pixi.External;
+using Bridge.Pixi.Interaction;
+
+namespace Bridge.Pixi
 {
 	/// <summary>
 	/// A Container represents a collection of display objects.
@@ -135,5 +139,17 @@
 		/// Swaps the position of 2 Display Objects within this container.
 		/// </summary>
 		public extern void SwapChildren(DisplayObject child, DisplayObject child2);
+
+		[Template("on('added', {action})")]
+		public extern Container OnAdded(Action<InteractionEvent> action);
+
+		[Template("on('removed', {action})")]
+		public extern Container OnRemoved(Action<InteractionEvent> action);
+
+		[Template("once('added', {action})")]
+		public extern Container OnceAdded(Action<InteractionEvent> action);
+
+		[Template("once('removed', {action})")]
+		public extern Container OnceRemoved(Action<InteractionEvent> action);
 	}
 }

@@ -1,4 +1,7 @@
-﻿using Bridge.Html5;
+﻿using System;
+using Bridge.Html5;
+using Bridge.Pixi.External;
+using Bridge.Pixi.Interaction;
 
 namespace Bridge.Pixi
 {
@@ -7,7 +10,7 @@ namespace Bridge.Pixi
 	/// </summary>
 	[External]
 	[Namespace("PIXI")]
-	public class BaseTexture
+	public class BaseTexture: EventEmitter
 	{
 		/// <summary>
 		/// Helper function that creates a base texture from the given canvas element.
@@ -136,5 +139,29 @@ namespace Bridge.Pixi
 		/// </summary>
 		/// <param name="newSrc">The path of the image.</param>
 		public extern void UpdateSourceImage(string newSrc);
+
+		[Template("on('dispose', {action})")]
+		public extern BaseTexture OnDispose(Action<InteractionEvent> action);
+
+		[Template("on('error', {action})")]
+		public extern BaseTexture OnError(Action<InteractionEvent> action);
+
+		[Template("on('loaded', {action})")]
+		public extern BaseTexture OnLoaded(Action<InteractionEvent> action);
+
+		[Template("on('update', {action})")]
+		public extern BaseTexture OnUpdate(Action<InteractionEvent> action);
+
+		[Template("once('dispose', {action})")]
+		public extern BaseTexture OnceDispose(Action<InteractionEvent> action);
+
+		[Template("once('error', {action})")]
+		public extern BaseTexture OnceError(Action<InteractionEvent> action);
+
+		[Template("once('loaded', {action})")]
+		public extern BaseTexture OnceLoaded(Action<InteractionEvent> action);
+
+		[Template("once('update', {action})")]
+		public extern BaseTexture OnceUpdate(Action<InteractionEvent> action);
 	}
 }

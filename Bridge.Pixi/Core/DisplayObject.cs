@@ -1,4 +1,6 @@
-﻿using Bridge.Pixi.External;
+﻿using System;
+using Bridge.Pixi.External;
+using Bridge.Pixi.Interaction;
 
 namespace Bridge.Pixi
 {
@@ -174,5 +176,101 @@ namespace Bridge.Pixi
 		/// <param name="from">The DisplayObject to calculate the global position from.</param>
 		/// <returns>A point object representing the position of this object.</returns>
 		public extern Point ToLocal(Point position, DisplayObject from = null);
+
+		[Template("on('click', {action})")]
+		public extern DisplayObject OnClick(Action<InteractionEvent> action);
+
+		[Template("on('mousedown', {action})")]
+		public extern DisplayObject OnMouseDown(Action<InteractionEvent> action);
+
+		[Template("on('mouseout', {action})")]
+		public extern DisplayObject OnMouseOut(Action<InteractionEvent> action);
+
+		[Template("on('mouseover', {action})")]
+		public extern DisplayObject OnMouseOver(Action<InteractionEvent> action);
+
+		[Template("on('mouseup', {action})")]
+		public extern DisplayObject OnMouseUp(Action<InteractionEvent> action);
+
+		[Template("on('mouseclick', {action})")]
+		public extern DisplayObject OnMouseClick(Action<InteractionEvent> action);
+
+		[Template("on('mouseupoutside', {action})")]
+		public extern DisplayObject OnMouseUpOutside(Action<InteractionEvent> action);
+
+		[Template("on('rightclick', {action})")]
+		public extern DisplayObject OnRightClick(Action<InteractionEvent> action);
+
+		[Template("on('rightdown', {action})")]
+		public extern DisplayObject OnRightDown(Action<InteractionEvent> action);
+
+		[Template("on('rightup', {action})")]
+		public extern DisplayObject OnRightUp(Action<InteractionEvent> action);
+
+		[Template("on('rightupoutside', {action})")]
+		public extern DisplayObject OnRightUpOutside(Action<InteractionEvent> action);
+
+		[Template("on('tap', {action})")]
+		public extern DisplayObject OnTap(Action<InteractionEvent> action);
+
+		[Template("on('touchend', {action})")]
+		public extern DisplayObject OnTouchEnd(Action<InteractionEvent> action);
+
+		[Template("on('touchendoutside', {action})")]
+		public extern DisplayObject OnTouchEndOutside(Action<InteractionEvent> action);
+
+		[Template("on('touchstart', {action})")]
+		public extern DisplayObject OnTouchStart(Action<InteractionEvent> action);
+
+		[Template("on('touchmove', {action})")]
+		public extern DisplayObject OnTouchMove(Action<InteractionEvent> action);
+
+		[Template("once('click', {action})")]
+		public extern DisplayObject OnceClick(Action<InteractionEvent> action);
+
+		[Template("once('mousedown', {action})")]
+		public extern DisplayObject OnceMouseDown(Action<InteractionEvent> action);
+
+		[Template("once('mouseout', {action})")]
+		public extern DisplayObject OnceMouseOut(Action<InteractionEvent> action);
+
+		[Template("once('mouseover', {action})")]
+		public extern DisplayObject OnceMouseOver(Action<InteractionEvent> action);
+
+		[Template("once('mouseup', {action})")]
+		public extern DisplayObject OnceMouseUp(Action<InteractionEvent> action);
+
+		[Template("once('mouseclick', {action})")]
+		public extern DisplayObject OnceMouseClick(Action<InteractionEvent> action);
+
+		[Template("once('mouseupoutside', {action})")]
+		public extern DisplayObject OnceMouseUpOutside(Action<InteractionEvent> action);
+
+		[Template("once('rightclick', {action})")]
+		public extern DisplayObject OnceRightClick(Action<InteractionEvent> action);
+
+		[Template("once('rightdown', {action})")]
+		public extern DisplayObject OnceRightDown(Action<InteractionEvent> action);
+
+		[Template("once('rightup', {action})")]
+		public extern DisplayObject OnceRightUp(Action<InteractionEvent> action);
+
+		[Template("once('rightupoutside', {action})")]
+		public extern DisplayObject OnceRightUpOutside(Action<InteractionEvent> action);
+
+		[Template("once('tap', {action})")]
+		public extern DisplayObject OnceTap(Action<InteractionEvent> action);
+
+		[Template("once('touchend', {action})")]
+		public extern DisplayObject OnceTouchEnd(Action<InteractionEvent> action);
+
+		[Template("once('touchendoutside', {action})")]
+		public extern DisplayObject OnceTouchEndOutside(Action<InteractionEvent> action);
+
+		[Template("once('touchstart', {action})")]
+		public extern DisplayObject OnceTouchStart(Action<InteractionEvent> action);
+
+		[Template("once('touchmove', {action})")]
+		public extern DisplayObject OnceTouchMove(Action<InteractionEvent> action);
 	}
 }

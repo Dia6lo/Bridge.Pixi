@@ -39,6 +39,7 @@
   <ItemGroup>
     <Compile Include="Core\BlendMode.cs" />
     <Compile Include="Core\GraphicsData.cs" />
+    <Compile Include="Interaction\InteractionEvent.cs" />
     <Compile Include="Core\Math\Shapes\Circle.cs" />
     <Compile Include="Core\Math\Shapes\Ellipse.cs" />
     <Compile Include="Core\Math\Shapes\IHitArea.cs" />

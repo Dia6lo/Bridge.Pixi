@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Bridge.Pixi.External;
+using Bridge.Pixi.Interaction;
 
 namespace Bridge.Pixi.Loaders
 {
@@ -45,5 +46,35 @@ namespace Bridge.Pixi.Loaders
 		public extern void Reset();
 
 		public extern Loader Load(Action<Loader, object> callback = null);
+
+		[Template("on('complete', {action})")]
+		public extern Loader OnComplete(Action<InteractionEvent> action);
+
+		[Template("on('error', {action})")]
+		public extern Loader OnError(Action<InteractionEvent> action);
+
+		[Template("on('load', {action})")]
+		public extern Loader OnLoad(Action<InteractionEvent> action);
+
+		[Template("on('progress', {action})")]
+		public extern Loader OnProgress(Action<InteractionEvent> action);
+
+		[Template("on('start', {action})")]
+		public extern Loader OnStart(Action<InteractionEvent> action);
+
+		[Template("once('complete', {action})")]
+		public extern Loader OnceComplete(Action<InteractionEvent> action);
+
+		[Template("once('error', {action})")]
+		public extern Loader OnceError(Action<InteractionEvent> action);
+
+		[Template("once('load', {action})")]
+		public extern Loader OnceLoad(Action<InteractionEvent> action);
+
+		[Template("once('progress', {action})")]
+		public extern Loader OnceProgress(Action<InteractionEvent> action);
+
+		[Template("once('start', {action})")]
+		public extern Loader OnceStart(Action<InteractionEvent> action);
 	}
 }
