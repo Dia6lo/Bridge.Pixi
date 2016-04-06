@@ -34,6 +34,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Release\Bridge.Pixi.xml</DocumentationFile>
+    <NoWarn>0626, 0824, 1591, 1573</NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Core\BlendMode.cs" />
