@@ -1,4 +1,4 @@
-version: 3.0.10.0-{build}
+version: 3.0.11.0-{build}
 
 before_build:
   - nuget restore
@@ -14,4 +14,4 @@ deploy:
   api_key:
     secure: KiU+IxCEHz91ElWv3YAXol9R51VF1+dUvcxrn/ZGlWPeu/oqlGKaDrE5fi9SPsJ+
   on:
-    branch: release
+   branch: release

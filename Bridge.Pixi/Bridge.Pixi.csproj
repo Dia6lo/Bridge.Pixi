@@ -34,10 +34,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Release\Bridge.Pixi.xml</DocumentationFile>
+    <NoWarn>0626, 0824, 1591, 1573</NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Core\BlendMode.cs" />
     <Compile Include="Core\GraphicsData.cs" />
+    <Compile Include="Interaction\InteractionEvent.cs" />
     <Compile Include="Core\Math\Shapes\Circle.cs" />
     <Compile Include="Core\Math\Shapes\Ellipse.cs" />
     <Compile Include="Core\Math\Shapes\IHitArea.cs" />

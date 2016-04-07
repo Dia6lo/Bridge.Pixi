@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Bridge.Pixi</id>
-    <version>3.0.10.0</version>
+    <version>3.0.11.0</version>
     <authors>Andrey Andreev</authors>    
     <licenseUrl>https://github.com/Dia6lo/Bridge.Pixi/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/Dia6lo/Bridge.Pixi</projectUrl>
@@ -14,7 +14,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\Release\Bridge.Pixi.dll" target="lib\Net40" />
     <file src="bin\Release\Bridge.Pixi.xml" target="lib\Net40" />
   </files>
 </package>
