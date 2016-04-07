@@ -9,9 +9,9 @@ build:
 
 configuration: Release
 
-#deploy:
-#- provider: NuGet
-#  api_key:
-#    secure: KiU+IxCEHz91ElWv3YAXol9R51VF1+dUvcxrn/ZGlWPeu/oqlGKaDrE5fi9SPsJ+
-#  on:
-#    branch: release
+deploy:
+- provider: NuGet
+  api_key:
+    secure: KiU+IxCEHz91ElWv3YAXol9R51VF1+dUvcxrn/ZGlWPeu/oqlGKaDrE5fi9SPsJ+
+  on:
+   branch: release
