@@ -5,6 +5,7 @@ namespace Bridge.Pixi.External
 	/// <summary>
 	/// https://github.com/primus/eventemitter3
 	/// </summary>
+	[External]
 	public abstract class EventEmitter
 	{
 		public extern Action GetListeners(string @event);
