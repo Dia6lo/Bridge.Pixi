@@ -42,6 +42,13 @@ namespace Bridge.Pixi
 		public AbstractFilter[] Filters { get; set; }
 
 		/// <summary>
+		/// Defines whether this object reacts to On and Once events.
+		/// Note: set this to true BEFORE calling On and Once methods.
+		/// </summary>
+		[FieldProperty]
+		public bool Interactive { get; set; }
+
+		/// <summary>
 		/// Retrieves the local bounds of the DisplayObject as a rectangle object.
 		/// </summary>
 		/// <returns></returns>
