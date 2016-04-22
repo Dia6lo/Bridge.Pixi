@@ -45,6 +45,12 @@
 		public BlendMode BlendMode { get; set; }
 
 		/// <summary>
+		/// Defines whether hand cursor appears when mouse is over this sprite.
+		/// </summary>
+		[FieldProperty]
+		public bool ButtonMode { get; set; }
+
+		/// <summary>
 		/// An internal cached value of the tint.
 		/// </summary>
 		[FieldProperty]

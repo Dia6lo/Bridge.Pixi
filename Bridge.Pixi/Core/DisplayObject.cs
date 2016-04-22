@@ -42,6 +42,13 @@ namespace Bridge.Pixi
 		public AbstractFilter[] Filters { get; set; }
 
 		/// <summary>
+		/// Defines whether this object reacts to On and Once events.
+		/// Note: set this to true BEFORE calling On and Once methods.
+		/// </summary>
+		[FieldProperty]
+		public bool Interactive { get; set; }
+
+		/// <summary>
 		/// Retrieves the local bounds of the DisplayObject as a rectangle object.
 		/// </summary>
 		/// <returns></returns>
@@ -180,6 +187,9 @@ namespace Bridge.Pixi
 		[Template("on('click', {action})")]
 		public extern DisplayObject OnClick(Action<InteractionEvent> action);
 
+		[Template("on('mousemove', {action})")]
+		public extern DisplayObject OnMouseMove(Action<InteractionEvent> action);
+
 		[Template("on('mousedown', {action})")]
 		public extern DisplayObject OnMouseDown(Action<InteractionEvent> action);
 
@@ -227,6 +237,9 @@ namespace Bridge.Pixi
 
 		[Template("once('click', {action})")]
 		public extern DisplayObject OnceClick(Action<InteractionEvent> action);
+
+		[Template("once('mousemove', {action})")]
+		public extern DisplayObject OnceMouseMove(Action<InteractionEvent> action);
 
 		[Template("once('mousedown', {action})")]
 		public extern DisplayObject OnceMouseDown(Action<InteractionEvent> action);
