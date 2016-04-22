@@ -187,6 +187,9 @@ namespace Bridge.Pixi
 		[Template("on('click', {action})")]
 		public extern DisplayObject OnClick(Action<InteractionEvent> action);
 
+		[Template("on('mousemove', {action})")]
+		public extern DisplayObject OnMouseMove(Action<InteractionEvent> action);
+
 		[Template("on('mousedown', {action})")]
 		public extern DisplayObject OnMouseDown(Action<InteractionEvent> action);
 
@@ -234,6 +237,9 @@ namespace Bridge.Pixi
 
 		[Template("once('click', {action})")]
 		public extern DisplayObject OnceClick(Action<InteractionEvent> action);
+
+		[Template("once('mousemove', {action})")]
+		public extern DisplayObject OnceMouseMove(Action<InteractionEvent> action);
 
 		[Template("once('mousedown', {action})")]
 		public extern DisplayObject OnceMouseDown(Action<InteractionEvent> action);
