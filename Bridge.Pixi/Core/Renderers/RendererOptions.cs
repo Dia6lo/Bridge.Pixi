@@ -10,7 +10,7 @@ namespace Bridge.Pixi
 		/// The canvas to use as a view.
 		/// </summary>
 		[FieldProperty]
-		public CanvasElement View { get; set; }
+		public HTMLCanvasElement View { get; set; }
 
 		/// <summary>
 		/// If the render view is transparent.

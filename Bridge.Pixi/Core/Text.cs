@@ -19,7 +19,7 @@ namespace Bridge.Pixi
 		/// The canvas element that everything is drawn to.
 		/// </summary>
 		[FieldProperty]
-		public CanvasElement Canvas { get; set; }
+		public HTMLCanvasElement Canvas { get; set; }
 
 		/// <summary>
 		/// The canvas 2d context that everything is drawn with.

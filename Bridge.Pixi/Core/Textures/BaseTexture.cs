@@ -17,7 +17,7 @@ namespace Bridge.Pixi
 		/// </summary>
 		/// <param name="canvas">The canvas element source of the texture.</param>
 		/// <param name="scaleMode">The scale mode of the texture.</param>
-		public static extern BaseTexture FromCanvas(CanvasElement canvas, ScaleMode scaleMode = ScaleMode.Default);
+		public static extern BaseTexture FromCanvas(HTMLCanvasElement canvas, ScaleMode scaleMode = ScaleMode.Default);
 
 		/// <summary>
 		/// Helper function that creates a base texture from the given image url.
@@ -32,7 +32,7 @@ namespace Bridge.Pixi
 		/// <param name="source">The source object of the texture.</param>
 		/// <param name="scaleMode">The scale mode of the texture.</param>
 		/// <param name="resolution">The resolution of the texture for devices with different pixel ratios.</param>
-		public extern BaseTexture(Any<ImageElement, CanvasElement> source,
+		public extern BaseTexture(Any<HTMLImageElement, HTMLCanvasElement> source,
 			ScaleMode scaleMode = ScaleMode.Default, Resolution? resolution = null);
 
 		/// <summary>
@@ -102,7 +102,7 @@ namespace Bridge.Pixi
 		/// The image source that is used to create the texture.
 		/// </summary>
 		[FieldProperty]
-		public Any<ImageElement, CanvasElement> Source { get; }
+		public Any<HTMLImageElement, HTMLCanvasElement> Source { get; }
 
 		/// <summary>
 		/// The width of the base texture set when the image has loaded.
@@ -127,7 +127,7 @@ namespace Bridge.Pixi
 		/// future and hasLoaded will remain false after this call.
 		/// </summary>
 		/// <param name="source">The source object of the texture.</param>
-		protected extern void LoadSource(Any<ImageElement, CanvasElement> source);
+		protected extern void LoadSource(Any<HTMLImageElement, HTMLCanvasElement> source);
 
 		/// <summary>
 		/// Updates the texture on all the WebDL renderers, this also assumes the src has changed.

@@ -17,7 +17,7 @@ namespace Bridge.Pixi
 		/// The Canvas object that belongs to this CanvasBuffer.
 		/// </summary>
 		[FieldProperty]
-		public CanvasElement Canvas { get; }
+		public HTMLCanvasElement Canvas { get; }
 
 		/// <summary>
 		/// A CanvasRenderingContext2D object representing a two-dimensional rendering context.

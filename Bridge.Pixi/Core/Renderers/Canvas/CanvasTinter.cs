@@ -9,7 +9,7 @@ namespace Bridge.Pixi
 	/// <param name="color">The color to use to tint the sprite with.</param>
 	/// <param name="canvas">The current canvas.</param>
 	[External]
-	public delegate void TintMethod(Texture texture, int color, CanvasElement canvas);
+	public delegate void TintMethod(Texture texture, int color, HTMLCanvasElement canvas);
 
 	[External]
 	[Namespace("PIXI")]
@@ -48,7 +48,7 @@ namespace Bridge.Pixi
 		/// <param name="sprite">The sprite to tint.</param>
 		/// <param name="color">The color to use to tint the sprite with.</param>
 		/// <returns>The tinted canvas</returns>
-		public static extern CanvasElement GetTintedTexture(Sprite sprite, int color);
+		public static extern HTMLCanvasElement GetTintedTexture(Sprite sprite, int color);
 
 		/// <summary>
 		/// Rounds the specified color according to the CacheStepsPerColorChannel.
@@ -62,7 +62,7 @@ namespace Bridge.Pixi
 		/// <param name="texture">The texture to tint.</param>
 		/// <param name="color">The color to use to tint the sprite with.</param>
 		/// <param name="canvas">The current canvas.</param>
-		public static extern void TintWithMultiply(Texture texture, int color, CanvasElement canvas);
+		public static extern void TintWithMultiply(Texture texture, int color, HTMLCanvasElement canvas);
 
 		/// <summary>
 		/// Tint a texture using the 'overlay' operation.
@@ -70,7 +70,7 @@ namespace Bridge.Pixi
 		/// <param name="texture">The texture to tint.</param>
 		/// <param name="color">The color to use to tint the sprite with.</param>
 		/// <param name="canvas">The current canvas.</param>
-		public static extern void TintWithOverlay(Texture texture, int color, CanvasElement canvas);
+		public static extern void TintWithOverlay(Texture texture, int color, HTMLCanvasElement canvas);
 
 		/// <summary>
 		/// Tint a texture pixel per pixel.
@@ -78,6 +78,6 @@ namespace Bridge.Pixi
 		/// <param name="texture">The texture to tint.</param>
 		/// <param name="color">The color to use to tint the sprite with.</param>
 		/// <param name="canvas">The current canvas.</param>
-		public static extern void TintWithPerPixel(Texture texture, int color, CanvasElement canvas);
+		public static extern void TintWithPerPixel(Texture texture, int color, HTMLCanvasElement canvas);
 	}
 }

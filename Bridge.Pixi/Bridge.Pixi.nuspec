@@ -10,7 +10,7 @@
     <description>Pixi.js installation into Bridge.NET projects. WARNING: This package doesn't have major/minor version separation, as it mimics targeted pixi.js version (except for last number of version). So, think of every version as of major and breaking.</description>
     <tags>C# bridge bridge.net pixi pixi-js</tags>
     <dependencies>
-      <dependency id="Bridge" version="1.11.2" />
+      <dependency id="Bridge" version="1.14.0" />
     </dependencies>
   </metadata>
   <files>
