@@ -32,7 +32,7 @@ namespace Bridge.Pixi
 		/// </summary>
 		/// <param name="canvas">The canvas element source of the texture.</param>
 		/// <param name="scaleMode">The scale mode of the texture.</param>
-		public static extern Texture FromCanvas(CanvasElement canvas, ScaleMode scaleMode = ScaleMode.Default);
+		public static extern Texture FromCanvas(HTMLCanvasElement canvas, ScaleMode scaleMode = ScaleMode.Default);
 
 		/// <summary>
 		/// Helper function that creates a sprite that will contain a texture from the TextureCache
@@ -54,7 +54,7 @@ namespace Bridge.Pixi
 		/// <summary>
 		/// Helper function that creates a new Texture based on the given video element.
 		/// </summary>
-		public static extern Texture FromVideo(VideoElement video, ScaleMode scaleMode = ScaleMode.Default);
+		public static extern Texture FromVideo(HTMLVideoElement video, ScaleMode scaleMode = ScaleMode.Default);
 
 		/// <summary>
 		/// Helper function that creates a new Texture based on the video url.

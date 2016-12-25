@@ -77,7 +77,7 @@ namespace Bridge.Pixi
 		/// The canvas element that everything is drawn to.
 		/// </summary>
 		[FieldProperty]
-		CanvasElement View { get; set; }
+		HTMLCanvasElement View { get; set; }
 
 		/// <summary>
 		/// The width of the canvas view.

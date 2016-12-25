@@ -5,7 +5,7 @@ namespace Bridge.Pixi.Loaders
 	public class LoaderOptions
 	{
 		[FieldProperty]
-		public Any<bool, string> CrossOrigin { get; set; }
+		public Union<bool, string> CrossOrigin { get; set; }
 
 		[FieldProperty]
 		public ResourceLoadType LoadType { get; set; }

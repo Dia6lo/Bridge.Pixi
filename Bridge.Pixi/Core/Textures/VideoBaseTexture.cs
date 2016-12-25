@@ -9,13 +9,13 @@ namespace Bridge.Pixi
 	[Namespace("PIXI")]
 	public class VideoBaseTexture : BaseTexture
 	{
-		public static extern VideoBaseTexture FromURL(Any<string, VideoInfo> videoSrc, ScaleMode scaleMode);
+		public static extern VideoBaseTexture FromURL(Union<string, VideoInfo> videoSrc, ScaleMode scaleMode);
 
-		public static extern VideoBaseTexture FromURLs(Any<string[], VideoInfo[]> videoSrc, ScaleMode scaleMode);
+		public static extern VideoBaseTexture FromURLs(Union<string[], VideoInfo[]> videoSrc, ScaleMode scaleMode);
 
-		public static extern VideoBaseTexture FromVideo(VideoElement video, ScaleMode scaleMode);
+		public static extern VideoBaseTexture FromVideo(HTMLVideoElement video, ScaleMode scaleMode);
 
-		public extern VideoBaseTexture(VideoElement source, ScaleMode scaleMode = ScaleMode.Default);
+		public extern VideoBaseTexture(HTMLVideoElement source, ScaleMode scaleMode = ScaleMode.Default);
 
 		/// <summary>
 		/// Should the base texture automatically update itself, set to true by default.
@@ -27,7 +27,7 @@ namespace Bridge.Pixi
 		/// The image source that is used to create the texture.
 		/// </summary>
 		[FieldProperty]
-		public new VideoElement Source { get; }
+		public new HTMLVideoElement Source { get; }
 	}
 
 	[External]

@@ -39,12 +39,12 @@ namespace Bridge.Pixi
 		/// <summary>
 		/// Creates a Canvas element, renders this RenderTexture to it and then returns it.
 		/// </summary>
-		public extern CanvasElement GetCanvas();
+		public extern HTMLCanvasElement GetCanvas();
 
 		/// <summary>
 		/// Will return a HTML Image of the texture.
 		/// </summary>
-		public extern ImageElement GetImage();
+		public extern HTMLImageElement GetImage();
 
 		/// <summary>
 		/// Will return a one-dimensional array containing the pixel data of a pixel within

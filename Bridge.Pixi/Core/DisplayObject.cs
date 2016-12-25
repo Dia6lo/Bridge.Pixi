@@ -62,7 +62,7 @@ namespace Bridge.Pixi
 		/// To remove a mask, set this property to null.
 		/// </summary>
 		[FieldProperty]
-		public Any<Graphics, Sprite> Mask { get; set; }
+		public Union<Graphics, Sprite> Mask { get; set; }
 
 		/// <summary>
 		/// The display object container that contains this display object.

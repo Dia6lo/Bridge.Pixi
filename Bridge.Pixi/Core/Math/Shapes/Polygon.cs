@@ -11,7 +11,7 @@ namespace Bridge.Pixi
 		/// or the arguments passed can be flat x,y values e.g. new Polygon(x,y, x,y, x,y, ...)
 		/// where x and y are floats.
 		/// </param>
-		public extern Polygon(Any<Point[], float[], Point> points);
+		public extern Polygon(Union<Point[], float[], Point> points);
 
 		/// <summary>
 		/// An array of the points of this polygon.

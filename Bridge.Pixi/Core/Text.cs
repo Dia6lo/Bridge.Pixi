@@ -19,7 +19,7 @@ namespace Bridge.Pixi
 		/// The canvas element that everything is drawn to.
 		/// </summary>
 		[FieldProperty]
-		public CanvasElement Canvas { get; set; }
+		public HTMLCanvasElement Canvas { get; set; }
 
 		/// <summary>
 		/// The canvas 2d context that everything is drawn with.
@@ -67,7 +67,7 @@ namespace Bridge.Pixi
 		/// A canvas fillstyle that will be used on the text e.g 'red', '#00FF00'.
 		/// </summary>
 		[FieldProperty]
-		public Any<string, int> Fill { get; set; }
+		public Union<string, int> Fill { get; set; }
 
 		/// <summary>
 		/// Alignment for multiline text, does not affect single line text.
@@ -79,7 +79,7 @@ namespace Bridge.Pixi
 		/// A canvas fillstyle that will be used on the text stroke e.g 'blue', '#FCFF00'.
 		/// </summary>
 		[FieldProperty]
-		public Any<string, int> Stroke { get; set; }
+		public Union<string, int> Stroke { get; set; }
 
 		/// <summary>
 		/// A number that represents the thickness of the stroke. Default is 0 (no stroke).

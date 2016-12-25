@@ -8,7 +8,7 @@ namespace Bridge.Pixi.Loaders
 	[Namespace("PIXI.loaders")]
 	public class Resource: EventEmitter
 	{
-		public extern Resource(string name = null, Any<string, string[]> url = null,
+		public extern Resource(string name = null, Union<string, string[]> url = null,
 			LoaderOptions options = null);
 
 		[FieldProperty]
@@ -28,7 +28,7 @@ namespace Bridge.Pixi.Loaders
 		public object Data { get; set; }
 
 		[FieldProperty]
-		public Any<bool, string> CrossOrigin { get; set; }
+		public Union<bool, string> CrossOrigin { get; set; }
 
 		[FieldProperty]
 		public ResourceLoadType LoadType { get; set; }
