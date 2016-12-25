@@ -9,9 +9,9 @@ namespace Bridge.Pixi
 	[Namespace("PIXI")]
 	public class VideoBaseTexture : BaseTexture
 	{
-		public static extern VideoBaseTexture FromURL(Any<string, VideoInfo> videoSrc, ScaleMode scaleMode);
+		public static extern VideoBaseTexture FromURL(Union<string, VideoInfo> videoSrc, ScaleMode scaleMode);
 
-		public static extern VideoBaseTexture FromURLs(Any<string[], VideoInfo[]> videoSrc, ScaleMode scaleMode);
+		public static extern VideoBaseTexture FromURLs(Union<string[], VideoInfo[]> videoSrc, ScaleMode scaleMode);
 
 		public static extern VideoBaseTexture FromVideo(HTMLVideoElement video, ScaleMode scaleMode);
 

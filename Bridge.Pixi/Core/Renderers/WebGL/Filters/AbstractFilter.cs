@@ -12,8 +12,8 @@
 		/// <param name="vertexSrc">The vertex shader source.</param>
 		/// <param name="fragmentSrc">The fragment shader source.</param>
 		/// <param name="uniforms">An object containing the uniforms for this filter.</param>
-		public extern AbstractFilter(Any<string, string[]> vertexSrc = null,
-			Any<string, string[]> fragmentSrc = null, object uniforms = null);
+		public extern AbstractFilter(Union<string, string[]> vertexSrc = null,
+			Union<string, string[]> fragmentSrc = null, object uniforms = null);
 
 		/// <summary>
 		/// The extra padding that the filter might need.

@@ -22,7 +22,7 @@
 		/// <param name="textures">
 		/// An array of Texture or frame objects that make up the animation
 		/// </param>
-		public extern MovieClip(Any<Texture[], Frame[]> textures);
+		public extern MovieClip(Union<Texture[], Frame[]> textures);
 
 		/// <summary>
 		/// The speed that the MovieClip will play at. Higher is faster, lower is slower.

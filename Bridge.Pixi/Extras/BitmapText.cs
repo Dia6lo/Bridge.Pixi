@@ -74,7 +74,7 @@ namespace Bridge.Pixi.Extras
 		/// or as an object with explicit name/size properties.
 		/// </summary>
 		[FieldProperty]
-		public Any<string, Font> Font { get; set; }
+		public Union<string, Font> Font { get; set; }
 
 		/// <summary>
 		/// Alignment for multiline text, does not affect single line text.

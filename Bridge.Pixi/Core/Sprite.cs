@@ -66,7 +66,7 @@
 		/// Set to null to remove a current shader.
 		/// </summary>
 		[FieldProperty]
-		public Any<Shader, AbstractFilter> Shader { get; set; }
+		public Union<Shader, AbstractFilter> Shader { get; set; }
 
 		/// <summary>
 		/// The texture that the sprite is using.

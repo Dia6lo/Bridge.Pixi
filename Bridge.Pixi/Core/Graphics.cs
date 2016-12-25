@@ -144,7 +144,7 @@
 		/// Draws a polygon using the given path.
 		/// </summary>
 		/// <param name="path">The path data used to construct the polygon.</param>
-		public extern Graphics DrawPolygon(Any<float[], Point[]> path);
+		public extern Graphics DrawPolygon(Union<float[], Point[]> path);
 
 		/// <summary>
 		/// Draws a rectangle.

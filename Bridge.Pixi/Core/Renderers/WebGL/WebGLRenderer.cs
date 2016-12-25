@@ -70,7 +70,7 @@
 		/// Deletes the texture from WebGL.
 		/// </summary>
 		/// <param name="texture">The texture to destroy.</param>
-		public extern void DestroyTexture(Any<BaseTexture, Texture> texture);
+		public extern void DestroyTexture(Union<BaseTexture, Texture> texture);
 
 		/// <summary>
 		/// Renders a Display Object.
@@ -83,6 +83,6 @@
 		/// Updates and/or Creates a WebGL texture for the renderer's context.
 		/// </summary>
 		/// <param name="texture">The texture to update.</param>
-		public extern void UpdateTexture(Any<BaseTexture, Texture> texture);
+		public extern void UpdateTexture(Union<BaseTexture, Texture> texture);
 	}
 }
