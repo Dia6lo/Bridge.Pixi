@@ -1,4 +1,4 @@
-version: 3.0.11.2-{build}
+version: 4.3.0.0-incomplete-{build}
 
 before_build:
   - nuget restore
